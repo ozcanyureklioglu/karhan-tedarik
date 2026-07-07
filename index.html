@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Karhan Tedarik | Dijital Tedarik Zinciri Yönetimi</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#49607e",
+                        "outline": "#74777e",
+                        "surface-container-low": "#f5f3f6",
+                        "inverse-primary": "#b0c8eb",
+                        "surface-container": "#efedf0",
+                        "inverse-on-surface": "#f2f0f3",
+                        "on-primary-container": "#768dad",
+                        "on-surface-variant": "#43474d",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c1e",
+                        "tertiary-container": "#002b12",
+                        "on-tertiary-fixed-variant": "#005228",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#b4ebff",
+                        "on-secondary-fixed": "#001f27",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c4c6ce",
+                        "surface-variant": "#e3e2e5",
+                        "on-secondary-fixed-variant": "#004e5f",
+                        "secondary-fixed-dim": "#3cd7ff",
+                        "on-secondary-container": "#005669",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#314865",
+                        "background": "#faf9fb",
+                        "surface": "#faf9fb",
+                        "on-tertiary-container": "#00a053",
+                        "surface-bright": "#faf9fb",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#0a2540",
+                        "primary": "#000f22",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-dim": "#dbd9dc",
+                        "inverse-surface": "#2f3033",
+                        "tertiary-fixed": "#6bfe9c",
+                        "surface-container-high": "#e9e8ea",
+                        "on-tertiary-fixed": "#00210c",
+                        "on-surface": "#1b1c1e",
+                        "tertiary": "#001305",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001c37",
+                        "surface-container-highest": "#e3e2e5",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "tertiary-fixed-dim": "#4ae183",
+                        "secondary-container": "#00d2fd",
+                        "secondary": "#00677e",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max-width": "1320px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["\"Source Sans 3\""],
+                        "body-sm": ["\"Source Sans 3\""],
+                        "headline-sm": ["Montserrat"],
+                        "body-lg": ["\"Source Sans 3\""],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-caps": ["\"Source Sans 3\""],
+                        "display-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-pattern {
+            background-color: #faf9fb;
+            background-image: radial-gradient(#c4c6ce 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Navigation -->
+<nav class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Karhan Tedarik Logo" class="h-10 w-10 object-contain rounded-md" src="wwwroot/assets/logo.jpeg"/>
+<span class="font-headline-md text-headline-md text-primary">Karhan Tedarik</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline-sm text-headline-sm text-secondary border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-300" href="#">Ana Sayfa</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#about">Hakkımızda</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#solutions">Çözümler</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#tech">Teknoloji</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#contact">Bize Ulaşın</a>
+</div>
+<button class="hidden md:inline-flex bg-primary-container text-on-primary hover:bg-secondary-container hover:text-on-secondary-container px-6 py-2 rounded-lg font-headline-sm text-headline-sm transition-colors duration-300">
+                Hemen Başlayın
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-margin-mobile md:px-margin-desktop relative">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container/50 pointer-events-none"></div>
+<div class="max-w-container-max-width mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-sm">rocket_launch</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">YENİ NESİL OPERASYON</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-primary">İşiniz İçin Doğru Çözüm, <br/><span class="text-secondary-container">Kesintisiz Tedarik</span></h1>
+<p class="font-body-lg text-on-surface-variant max-w-lg">
+                    Karmaşık süreçleri unutun; güçlü operasyon ağımızla tedarik zincirinizi biz yönetelim, siz sadece büyümeye odaklanın. Veriye dayalı global lojistik altyapımızla tanışın.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary-container text-on-primary hover:bg-secondary-container hover:text-on-secondary-container px-8 py-3 rounded-lg font-headline-sm text-headline-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-1">
+                        Çözümlerimizi İnceleyin
+                    </button>
+<button class="border border-primary-container text-primary-container hover:bg-surface-variant px-8 py-3 rounded-lg font-headline-sm text-headline-sm transition-all">
+                        Bize Ulaşın
+                    </button>
+</div>
+</div>
+<div class="relative hidden md:block h-[500px] w-full bg-white rounded-xl shadow-lg border border-outline-variant/50 overflow-hidden">
+<div class="bg-cover bg-center w-full h-full" data-alt="A highly detailed 3D abstract visualization of a global supply chain network. Glowing digital nodes connected by luminous light trails hover over a stylized, minimalist white topographical map. The color palette emphasizes pristine white, deep corporate blue, and vibrant tech turquoise. The lighting is bright, soft, and highly professional, projecting an atmosphere of modern enterprise technology and efficiency. 8k resolution, photorealistic rendering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD9WNPQYDCZMG4lVMjCQLFMFJYpIB9jGYSDukPh3G-uOitJm9BdsE1VCjAfuCIV5ZIwSJqIrx9dLiuTZTRbIKkDkZke8tWUTWHgWG4sW4T48x05FJ6H--aW8a3tzGcYMQDQaMARZ1r09aV2YLmSnzLHcezT179XUZy6CEzChZgG86oxuPbW5YVuz_qtvZcjUlL7UMlNI6B8Jw7kCymRSPoz1Eum2lYRDePU1RdNZqFu8j_NYnlz7u1mA')"></div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-primary-container text-on-primary py-16 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-container-max-width mx-auto">
+<h2 class="font-headline-md text-headline-md text-center mb-12">Karhan Tedarik İle Güvenli Büyüme</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" id="stats-container">
+<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
+<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="25">0</span>%</div>
+<div class="font-body-md text-on-primary/80">Teslimat Süresi İyileşmesi</div>
+</div>
+<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
+<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="50">0</span></div>
+<div class="font-body-md text-on-primary/80">PPM Hata Oranı</div>
+</div>
+<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
+<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="4.9">0</span></div>
+<div class="font-body-md text-on-primary/80">Müşteri Memnuniyeti</div>
+</div>
+<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
+<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="40">0</span>+</div>
+<div class="font-body-md text-on-primary/80">Global Ülke Ağı</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary pt-12 pb-8 border-t border-primary-container">
+<div class="flex flex-col items-center gap-8 px-margin-desktop max-w-container-max-width mx-auto">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary-container">
+                Karhan Tedarik
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Gizlilik Politikası</a>
+<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Kullanım Koşulları</a>
+<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">KVKK</a>
+<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Çerez Politikası</a>
+</div>
+<div class="font-body-sm text-body-sm text-on-primary/70 text-center">
+                © 2024 Karhan Tedarik. Tüm hakları saklıdır.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple counter animation using Vanilla JS and Intersection Observer
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; 
+
+            const animateCounters = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute('data-target');
+                        
+                        const updateCount = () => {
+                            const count = +counter.innerText;
+                            const inc = target / speed;
+
+                            if (count < target) {
+                                counter.innerText = (count + inc).toFixed(target % 1 !== 0 ? 1 : 0);
+                                setTimeout(updateCount, 1);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCount();
+                        observer.unobserve(counter);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(animateCounters, {
+                threshold: 0.5
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body></html>
