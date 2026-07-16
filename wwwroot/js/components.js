@@ -24,7 +24,7 @@ function renderNavbar() {
         <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto w-full">
             <a href="index.html" class="flex items-center gap-3 no-underline">
                 <img src="wwwroot/assets/logo.jpeg" alt="Kar-Han Tedarik Logosu" class="h-10 w-auto rounded object-cover" />
-                <div class="font-headline-md text-headline-md font-bold text-deep-navy">Karhan Tedarik</div>
+                <div class="font-headline-md text-headline-md font-bold text-deep-navy">Kar-Han Tedarik</div>
             </a>
             <div class="hidden md:flex gap-8">${linksHtml}</div>
             <div class="hidden md:flex items-center gap-4">
@@ -56,7 +56,7 @@ function renderFooter() {
                 <div>
                     <div class="flex items-center gap-3 mb-4">
                         <img src="wwwroot/assets/logo.jpeg" alt="Kar-Han Tedarik Logosu" class="h-8 w-auto rounded object-cover" />
-                        <div class="font-bold text-surface-container-lowest text-lg">Karhan Tedarik</div>
+                        <div class="font-bold text-surface-container-lowest text-lg">Kar-Han Tedarik</div>
                     </div>
                     <p class="opacity-70 text-sm leading-relaxed">Tedarik zinciri ve lojistik çözümlerinde güvenilir iş ortağınız.</p>
                 </div>
@@ -74,7 +74,7 @@ function renderFooter() {
                 </div>
             </div>
             <div class="border-t border-outline pt-6 text-center opacity-60 text-sm">
-                © 2025 Karhan Tedarik. Tüm hakları saklıdır.
+                © 2025 Kar-Han Tedarik. Tüm hakları saklıdır.
             </div>
         </div>
     </footer>`;
@@ -104,4 +104,5 @@ function initComponents() {
 }
 
 document.addEventListener('DOMContentLoaded', initComponents);
+
 
