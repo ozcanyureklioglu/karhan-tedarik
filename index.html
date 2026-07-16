@@ -1,239 +1,522 @@
 <!DOCTYPE html>
 
-<html lang="tr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Karhan Tedarik | Dijital Tedarik Zinciri Yönetimi</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LogiProcure Enterprise - Global Tedarik ve Lojistik Çözümleri</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "on-tertiary": "#ffffff",
-                        "surface-tint": "#49607e",
-                        "outline": "#74777e",
-                        "surface-container-low": "#f5f3f6",
-                        "inverse-primary": "#b0c8eb",
-                        "surface-container": "#efedf0",
-                        "inverse-on-surface": "#f2f0f3",
-                        "on-primary-container": "#768dad",
-                        "on-surface-variant": "#43474d",
-                        "on-primary": "#ffffff",
-                        "on-background": "#1b1c1e",
-                        "tertiary-container": "#002b12",
-                        "on-tertiary-fixed-variant": "#005228",
-                        "on-secondary": "#ffffff",
-                        "secondary-fixed": "#b4ebff",
-                        "on-secondary-fixed": "#001f27",
-                        "on-error-container": "#93000a",
-                        "outline-variant": "#c4c6ce",
-                        "surface-variant": "#e3e2e5",
-                        "on-secondary-fixed-variant": "#004e5f",
-                        "secondary-fixed-dim": "#3cd7ff",
-                        "on-secondary-container": "#005669",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed-variant": "#314865",
-                        "background": "#faf9fb",
-                        "surface": "#faf9fb",
-                        "on-tertiary-container": "#00a053",
-                        "surface-bright": "#faf9fb",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-container": "#0a2540",
-                        "primary": "#000f22",
-                        "primary-fixed": "#d2e4ff",
-                        "surface-dim": "#dbd9dc",
-                        "inverse-surface": "#2f3033",
-                        "tertiary-fixed": "#6bfe9c",
-                        "surface-container-high": "#e9e8ea",
-                        "on-tertiary-fixed": "#00210c",
-                        "on-surface": "#1b1c1e",
-                        "tertiary": "#001305",
                         "error-container": "#ffdad6",
-                        "on-primary-fixed": "#001c37",
-                        "surface-container-highest": "#e3e2e5",
-                        "primary-fixed-dim": "#b0c8eb",
-                        "tertiary-fixed-dim": "#4ae183",
-                        "secondary-container": "#00d2fd",
-                        "secondary": "#00677e",
-                        "error": "#ba1a1a"
+                        "on-primary-fixed": "#001c38",
+                        "on-secondary-container": "#606367",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-fixed": "#d3e4ff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f9f9f9",
+                        "outline": "#727781",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-surface": "#1a1c1c",
+                        "border-gray": "#D1D1D1",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed": "#191c1f",
+                        "tertiary-fixed-dim": "#81cfff",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#005596",
+                        "primary": "#003e6f",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed": "#e1e2e7",
+                        "background": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-surface": "#2f3131",
+                        "on-background": "#1a1c1c",
+                        "success-green": "#28A745",
+                        "deep-navy": "#002D56",
+                        "secondary": "#5c5f63",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#a2c9ff",
+                        "outline-variant": "#c1c7d2",
+                        "surface-container": "#eeeeee",
+                        "slate-gray": "#333F48",
+                        "primary-fixed-dim": "#a2c9ff",
+                        "secondary-container": "#dee0e4",
+                        "on-primary-container": "#a4caff",
+                        "secondary-fixed-dim": "#c4c6cb",
+                        "tertiary": "#00415c",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "surface-dim": "#dadada",
+                        "error": "#ba1a1a",
+                        "text-main": "#1A1A1A",
+                        "surface-bright": "#f9f9f9",
+                        "surface-tint": "#1b60a2",
+                        "on-primary-fixed-variant": "#004881",
+                        "on-secondary-fixed-variant": "#44474b",
+                        "on-tertiary-container": "#83d0ff",
+                        "tertiary-fixed": "#c6e7ff",
+                        "on-tertiary-fixed": "#001e2d",
+                        "tertiary-container": "#00597c",
+                        "on-surface-variant": "#414750"
                     },
                     "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
                     },
                     "spacing": {
-                        "container-max-width": "1320px",
+                        "margin-desktop": "40px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
                         "gutter": "24px",
-                        "margin-desktop": "48px",
+                        "container-max-width": "1280px",
+                        "stack-sm": "8px",
                         "margin-mobile": "16px",
-                        "base": "8px"
+                        "unit": "8px"
                     },
                     "fontFamily": {
-                        "headline-md": ["Montserrat"],
-                        "body-md": ["\"Source Sans 3\""],
-                        "body-sm": ["\"Source Sans 3\""],
-                        "headline-sm": ["Montserrat"],
-                        "body-lg": ["\"Source Sans 3\""],
-                        "display-lg-mobile": ["Montserrat"],
-                        "label-caps": ["\"Source Sans 3\""],
-                        "display-lg": ["Montserrat"]
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"]
                     },
                     "fontSize": {
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
-                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "16px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
                     }
                 }
             }
         }
     </script>
-<style>
-        .hero-pattern {
-            background-color: #faf9fb;
-            background-image: radial-gradient(#c4c6ce 1px, transparent 1px);
-            background-size: 24px 24px;
+    <style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+
+        /* Typography mappings */
+        .font-headline-xl {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+        }
+
+        .text-headline-xl {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        .font-headline-lg {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .text-headline-lg {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+
+        .font-headline-lg-mobile {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .text-headline-lg-mobile {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+
+        .font-headline-md {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .text-headline-md {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+
+        .font-body-lg {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .text-body-lg {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+
+        .font-body-md {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .text-body-md {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        .font-body-sm {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .text-body-sm {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .font-label-bold {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .text-label-bold {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 600;
+        }
+
+        .font-label-sm {
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .text-label-sm {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 500;
+        }
+
+        /* Custom styles */
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 45, 86, 0.08);
+        }
+
+        /* Button styles based on guide */
+        .btn-primary {
+            @apply bg-primary text-on-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-[#002b4d] active:ring-2 active:ring-tertiary active:ring-offset-2;
+        }
+
+        .btn-secondary {
+            @apply bg-transparent text-primary border border-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-surface-container-low active:ring-2 active:ring-tertiary active:ring-offset-2;
+        }
+
+        /* Card styles */
+        .corp-card {
+            @apply bg-surface-container-lowest border border-border-gray rounded-lg p-stack-lg;
         }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
-<!-- Navigation -->
-<nav class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm fixed top-0 w-full z-50">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max-width mx-auto">
-<div class="flex items-center gap-3">
-<img alt="Karhan Tedarik Logo" class="h-10 w-10 object-contain rounded-md" src="wwwroot/assets/logo.jpeg"/>
-<span class="font-headline-md text-headline-md text-primary">Karhan Tedarik</span>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-headline-sm text-headline-sm text-secondary border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-300" href="#">Ana Sayfa</a>
-<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#about">Hakkımızda</a>
-<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#solutions">Çözümler</a>
-<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#tech">Teknoloji</a>
-<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#contact">Bize Ulaşın</a>
-</div>
-<button class="hidden md:inline-flex bg-primary-container text-on-primary hover:bg-secondary-container hover:text-on-secondary-container px-6 py-2 rounded-lg font-headline-sm text-headline-sm transition-colors duration-300">
-                Hemen Başlayın
+
+<body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
+    <!-- TopNavBar: {{DATA:COMPONENTS:COMPONENTS_2}} -->
+    <nav
+        class="bg-surface-container-lowest dark:bg-surface-dim font-body-md text-body-md w-full sticky top-0 z-50 border-b border-border-gray dark:border-outline-variant flat no shadows">
+        <div
+            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto w-full">
+            <div class="flex items-center gap-3">
+                <img src="wwwroot/assets/logo.jpeg" alt="Logo" class="h-10 w-auto rounded object-cover" />
+                <div class="font-headline-md text-headline-md font-bold text-deep-navy dark:text-primary-fixed-dim">
+                    Karhan Tedarik
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
+                    href="#services">Services</a>
+                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
+                    href="#partners">Partners</a>
+                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
+                    href="#case-studies">Case Studies</a>
+                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
+                    href="#about">About Us</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="btn-secondary">Login</button>
+                <button class="btn-primary">Get a Quote</button>
+            </div>
+            <!-- Mobile Menu Button (Placeholder for simplicity) -->
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
             </button>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-margin-mobile md:px-margin-desktop relative">
-<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container/50 pointer-events-none"></div>
-<div class="max-w-container-max-width mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
-<div class="space-y-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-full border border-outline-variant">
-<span class="material-symbols-outlined text-secondary text-sm">rocket_launch</span>
-<span class="font-label-caps text-label-caps text-on-surface-variant">YENİ NESİL OPERASYON</span>
-</div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-primary">İşiniz İçin Doğru Çözüm, <br/><span class="text-secondary-container">Kesintisiz Tedarik</span></h1>
-<p class="font-body-lg text-on-surface-variant max-w-lg">
-                    Karmaşık süreçleri unutun; güçlü operasyon ağımızla tedarik zincirinizi biz yönetelim, siz sadece büyümeye odaklanın. Veriye dayalı global lojistik altyapımızla tanışın.
-                </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="bg-primary-container text-on-primary hover:bg-secondary-container hover:text-on-secondary-container px-8 py-3 rounded-lg font-headline-sm text-headline-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-1">
-                        Çözümlerimizi İnceleyin
-                    </button>
-<button class="border border-primary-container text-primary-container hover:bg-surface-variant px-8 py-3 rounded-lg font-headline-sm text-headline-sm transition-all">
-                        Bize Ulaşın
-                    </button>
-</div>
-</div>
-<div class="relative hidden md:block h-[500px] w-full bg-white rounded-xl shadow-lg border border-outline-variant/50 overflow-hidden">
-<div class="bg-cover bg-center w-full h-full" data-alt="A highly detailed 3D abstract visualization of a global supply chain network. Glowing digital nodes connected by luminous light trails hover over a stylized, minimalist white topographical map. The color palette emphasizes pristine white, deep corporate blue, and vibrant tech turquoise. The lighting is bright, soft, and highly professional, projecting an atmosphere of modern enterprise technology and efficiency. 8k resolution, photorealistic rendering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD9WNPQYDCZMG4lVMjCQLFMFJYpIB9jGYSDukPh3G-uOitJm9BdsE1VCjAfuCIV5ZIwSJqIrx9dLiuTZTRbIKkDkZke8tWUTWHgWG4sW4T48x05FJ6H--aW8a3tzGcYMQDQaMARZ1r09aV2YLmSnzLHcezT179XUZy6CEzChZgG86oxuPbW5YVuz_qtvZcjUlL7UMlNI6B8Jw7kCymRSPoz1Eum2lYRDePU1RdNZqFu8j_NYnlz7u1mA')"></div>
-</div>
-</div>
-</section>
-<!-- Stats Section -->
-<section class="bg-primary-container text-on-primary py-16 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
-<div class="max-w-container-max-width mx-auto">
-<h2 class="font-headline-md text-headline-md text-center mb-12">Karhan Tedarik İle Güvenli Büyüme</h2>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" id="stats-container">
-<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
-<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="25">0</span>%</div>
-<div class="font-body-md text-on-primary/80">Teslimat Süresi İyileşmesi</div>
-</div>
-<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
-<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="50">0</span></div>
-<div class="font-body-md text-on-primary/80">PPM Hata Oranı</div>
-</div>
-<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
-<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="4.9">0</span></div>
-<div class="font-body-md text-on-primary/80">Müşteri Memnuniyeti</div>
-</div>
-<div class="p-6 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
-<div class="font-display-lg text-secondary-container mb-2"><span class="counter" data-target="40">0</span>+</div>
-<div class="font-body-md text-on-primary/80">Global Ülke Ağı</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-primary pt-12 pb-8 border-t border-primary-container">
-<div class="flex flex-col items-center gap-8 px-margin-desktop max-w-container-max-width mx-auto">
-<div class="font-headline-sm text-headline-sm font-bold text-secondary-container">
-                Karhan Tedarik
+        </div>
+    </nav>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <video autoplay="" class="object-cover w-full h-full" loop="" muted="" playsinline="">
+                    <source
+                        src="wwwroot/assets/video1.mp4"
+                        type="video/mp4" />
+                </video>
+                <div class="absolute inset-0 bg-deep-navy bg-opacity-70"></div>
             </div>
-<div class="flex flex-wrap justify-center gap-6">
-<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Gizlilik Politikası</a>
-<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Kullanım Koşulları</a>
-<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">KVKK</a>
-<a class="font-label-caps text-label-caps text-on-primary/70 hover:text-secondary-container transition-colors" href="#">Çerez Politikası</a>
-</div>
-<div class="font-body-sm text-body-sm text-on-primary/70 text-center">
-                © 2024 Karhan Tedarik. Tüm hakları saklıdır.
+            <div
+                class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center text-surface-container-lowest">
+                <h1
+                    class="font-headline-xl text-headline-xl md:font-headline-xl md:text-headline-xl font-headline-lg-mobile text-headline-lg-mobile mb-stack-md">
+                    Global Tedarik ve Lojistik Çözümleri</h1>
+                <p class="font-body-lg text-body-lg mb-stack-lg max-w-3xl mx-auto opacity-90">Dünyanın dört bir yanına
+                    güvenli, hızlı ve optimize edilmiş tedarik zinciri yönetimi ile kurumsal operasyonlarınızı
+                    güçlendiriyoruz.</p>
+                <button class="btn-primary text-body-lg font-body-lg px-8 py-4">Hizmetlerimizi İnceleyin</button>
             </div>
-</div>
-</footer>
-<script>
-        // Simple counter animation using Vanilla JS and Intersection Observer
-        document.addEventListener("DOMContentLoaded", () => {
-            const counters = document.querySelectorAll('.counter');
-            const speed = 200; 
+        </section>
+        <!-- Services Section -->
+        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="services">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Uzmanlık Alanlarımız</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <!-- Service Card 1 -->
+                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
+                        style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+                    <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Stratejik Satın Alma</h3>
+                    <p class="font-body-md text-body-md text-secondary">Maliyetleri optimize ederken kalite
+                        standartlarını yükselten, veriye dayalı stratejik tedarik süreçleri sunuyoruz.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
+                        style="font-variation-settings: 'FILL' 0;">account_tree</span>
+                    <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Tedarik Zinciri Yönetimi
+                    </h3>
+                    <p class="font-body-md text-body-md text-secondary">Uçtan uca şeffaflık sağlayan, entegre ve
+                        sürdürülebilir tedarik zinciri çözümleri ile operasyonel riskleri minimize ediyoruz.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
+                        style="font-variation-settings: 'FILL' 0;">flight_takeoff</span>
+                    <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Global Lojistik</h3>
+                    <p class="font-body-md text-body-md text-secondary">Uluslararası standartlarda, zamanında ve güvenli
+                        teslimat garantisi ile sınırları aşan lojistik operasyonlar yönetiyoruz.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Partners Section -->
+        <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-y border-border-gray"
+            id="partners">
+            <div class="max-w-container-max-width mx-auto">
+                <h2 class="font-headline-md text-headline-md text-center text-secondary mb-12">Çalıştığımız Firmalar
+                </h2>
+                <div class="flex flex-wrap justify-center items-center gap-12 opacity-60">
+                    <!-- Placeholder Logos -->
+                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">PARTNER<span
+                            class="text-primary">ONE</span></div>
+                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">GLOBAL<span
+                            class="text-primary">INC</span></div>
+                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">SYS<span
+                            class="text-primary">CORP</span></div>
+                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">NEXUS<span
+                            class="text-primary">LOG</span></div>
+                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">OMEGA<span
+                            class="text-primary">IND</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section -->
+        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="about">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-md">Kurumsal Güvenilirlik ve
+                        Mükemmellik</h2>
+                    <p class="font-body-md text-body-md text-secondary mb-stack-md">LogiProcure Enterprise, karmaşık
+                        tedarik ağlarını yönetmek üzere tasarlanmış, endüstri lideri bir platformdur. Amacımız,
+                        işletmelere kararlı, profesyonel ve kesin sonuçlar veren bir altyapı sağlamaktır.</p>
+                    <p class="font-body-md text-body-md text-secondary">Verimlilik ve güvenliği temel alarak, tedarik
+                        süreçlerinizi dijitalleştiriyor ve kurumsal hedeflerinize ulaşmanızı hızlandırıyoruz.</p>
+                </div>
+                <div class="relative h-96 rounded-lg overflow-hidden ambient-shadow">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        data-alt="A modern, immaculate corporate control room or command center used for monitoring global logistics. The room features multiple large, glowing digital displays showing maps and data metrics. Experienced professionals in sharp business attire are analyzing the data in a brightly lit, high-contrast environment. The overall tone is highly professional, secure, and technologically advanced, dominated by crisp whites, neutral grays, and corporate blue tones."
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZbAstMlw5M24rdNMzaRkUu7GyT1C60s-5jLZOH1nasHwuMaobFq3-iRCvuOQD-vwr8R-VfbKIpluZ7yrIbZ1x2rn3t9vVnVz6oVlPoRXdZUEtsOUNBhkY6I4zmKNONbkbAUN880uec_GeOE3LOwTtagAdnGCCEBtgf15WClITWQtGwwD6ei5ZInfFyGE7z15M393hRlgksbO5gOfoqiUSRmvnpTXFEQxWAaoT3Lo6Hk7Xj4SziJKV')">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Case Studies Section (Bento Grid) -->
+        <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-t border-border-gray"
+            id="case-studies">
+            <div class="max-w-container-max-width mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Başarı Hikayeleri</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[250px]">
+                    <!-- Case Study 1 - Large -->
+                    <div class="md:col-span-2 corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            data-alt="A massive, pristine commercial cargo ship navigating a calm, deep blue ocean under a clear, bright sky. The ship is loaded with vibrant, cleanly stacked shipping containers. The lighting is crisp and natural, highlighting the sheer scale and efficiency of global maritime logistics. The aesthetic is clean, high-contrast, and professional."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-LxDnb0L-vyq5YbybMuzk1FiIM5aXRb06TBBf4-3zuUvyCOCBuxyfCV-PiE7AZWcBXC81h4Lk4iGv9_M7yxCsBklrrKePyVyDBoJUYA23f3yDQHB08mJoXueWXPyA4WVnOmx45Lxoob4rMDIZJbQku_UmL7Kh4apwuSp7KLQpIwhjpg1MqaXOKLDted-BV7Omj-_R0xDY7RNxRYdm86X-zbCJabO8_RYHYP7SzsSzVa2g-ocVRjZC')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-deep-navy via-transparent to-transparent opacity-90">
+                        </div>
+                        <div class="relative z-10 p-stack-lg mt-auto text-surface-container-lowest w-full">
+                            <span
+                                class="inline-block bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-1 rounded mb-stack-sm">Üretim
+                                Sektörü</span>
+                            <h3 class="font-headline-md text-headline-md mb-stack-sm">Uzak Doğu Tedarik Ağı
+                                Optimizasyonu</h3>
+                            <p class="font-body-sm text-body-sm opacity-90">Global üretim devi için tedarik süresini %30
+                                azaltan yeni nesil rotalama stratejisi.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 2 -->
+                    <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            data-alt="An advanced, automated pharmaceutical warehouse interior. Clean, white robotic arms are carefully moving neatly packaged medical supplies along a conveyor belt. The environment is sterile, extremely brightly lit, and highly organized, conveying precision and reliability. The color scheme is predominantly bright white and cool clinical blue."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-6OGWAMOTT8evCLYh2sOBiYI0v8xAW_xPA23Ca707xiHRiQGaMWuNAiWoHmtqEf80NsC2m7tsyGheOvvZL7RtTLA4Z6b04RvjCuQ8OqSIlUIKSZcLQspdldXcX9GtZZCK24RepwsV6DUA7s34xzoXdf_3ZIJX6flo1wk2DBOnf4NVAjb_PZRjyvz7Tb1VkiGnHjweHuTcTWQQm071RoCqyy6P0HJt9Q2UyueDQoHLg9cKqniiXIIZ')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-deep-navy via-transparent to-transparent opacity-90">
+                        </div>
+                        <div class="relative z-10 p-stack-md mt-auto text-surface-container-lowest w-full">
+                            <span
+                                class="inline-block bg-surface-tint text-surface-container-lowest font-label-sm text-label-sm px-2 py-1 rounded mb-stack-sm">Sağlık
+                                &amp; İlaç</span>
+                            <h3 class="font-body-lg text-body-lg font-bold mb-stack-sm">Soğuk Zincir Yönetimi</h3>
+                            <p class="font-body-sm text-body-sm opacity-90">Hassas medikal ürünler için sıfır hata
+                                toleranslı lojistik.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 3 -->
+                    <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            data-alt="A modern, sleek fleet of electric corporate delivery trucks parked in a perfectly aligned row outside a large, contemporary distribution center. The trucks are pristine white with subtle corporate blue branding elements. The scene is lit by bright daylight, emphasizing a clean, sustainable, and highly professional corporate logistics operation."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuLVMMCj_vCWKYfP-N3OBiFsXGoVxFtose3Fs4ZUGcSXsxra0rTX3YPK_eR873UEXtg-kBmh6C7mSbgyQid_fh9MvvYU_d_wEkfBzzS_JEHMQcCgUd7gJhFK3qu0Enbii8jaNnlS-D1SCyw03_dZoA1l85Qo6p0Jyk9f49hhUT8bdhxgBguXR833cl4nRKrQhfNIZSlrlDH0bOxhH7F3niotgVo2h8YMr8u1Zf3yCkW5gcJqZGx5nb')">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-deep-navy via-transparent to-transparent opacity-90">
+                        </div>
+                        <div class="relative z-10 p-stack-md mt-auto text-surface-container-lowest w-full">
+                            <span
+                                class="inline-block bg-secondary text-surface-container-lowest font-label-sm text-label-sm px-2 py-1 rounded mb-stack-sm">Perakende</span>
+                            <h3 class="font-body-lg text-body-lg font-bold mb-stack-sm">Son Kilometre Çözümleri</h3>
+                            <p class="font-body-sm text-body-sm opacity-90">Şehir içi dağıtımda maksimum verimlilik ve
+                                hız.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 4 (Filling the grid) -->
+                    <div
+                        class="md:col-span-2 corp-card bg-primary-container text-on-primary-container flex flex-col justify-center items-center text-center p-stack-lg">
+                        <h3 class="font-headline-md text-headline-md mb-stack-md">Tüm Vaka Çalışmalarını İnceleyin</h3>
+                        <button
+                            class="btn-primary bg-surface-container-lowest text-primary hover:bg-surface border-none shadow-sm">Raporları
+                            Görüntüle</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact / CTA Section -->
+        <section
+            class="py-24 px-margin-mobile md:px-margin-desktop bg-deep-navy text-surface-container-lowest text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-headline-lg text-headline-lg mb-stack-md">Operasyonlarınızı Dönüştürmeye Hazır Mısınız?
+                </h2>
+                <p class="font-body-lg text-body-lg mb-stack-lg opacity-90">Uzman ekibimizle iletişime geçin,
+                    işletmenize özel tedarik ve lojistik stratejilerini birlikte planlayalım.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                        class="btn-primary bg-surface-container-lowest text-deep-navy hover:bg-surface text-body-md font-body-md px-8 py-4">Get
+                        a Quote</button>
+                    <button
+                        class="btn-secondary text-surface-container-lowest border-surface-container-lowest hover:bg-surface-tint hover:border-surface-tint text-body-md font-body-md px-8 py-4">Satış
+                        Ekibiyle İletişime Geç</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer: {{DATA:COMPONENTS:COMPONENTS_2}} -->
+    <footer
+        class="bg-slate-gray dark:bg-inverse-surface text-surface-container-lowest dark:text-surface-bright font-body-sm text-body-sm border-t border-outline dark:border-outline-variant flat no shadows">
+        <div
+            class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
+            <div>
+                <div class="flex items-center gap-3 mb-stack-sm">
+                    <img src="wwwroot/assets/logo.jpeg" alt="Logo" class="h-8 w-auto rounded object-cover" />
+                    <div class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">
+                        LogiProcure Enterprise
+                    </div>
+                </div>
+                <p class="opacity-70 mt-4">© 2024 LogiProcure Enterprise Solutions. All rights reserved.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16">
+                <div class="flex flex-col gap-4">
+                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
+                        href="#">Privacy Policy</a>
+                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
+                        href="#">Terms of Service</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
+                        href="#">Compliance</a>
+                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
+                        href="#">Global Offices</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline font-bold text-primary-fixed-dim"
+                        href="#">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
-            const animateCounters = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const counter = entry.target;
-                        const target = +counter.getAttribute('data-target');
-                        
-                        const updateCount = () => {
-                            const count = +counter.innerText;
-                            const inc = target / speed;
-
-                            if (count < target) {
-                                counter.innerText = (count + inc).toFixed(target % 1 !== 0 ? 1 : 0);
-                                setTimeout(updateCount, 1);
-                            } else {
-                                counter.innerText = target;
-                            }
-                        };
-                        updateCount();
-                        observer.unobserve(counter);
-                    }
-                });
-            };
-
-            const observer = new IntersectionObserver(animateCounters, {
-                threshold: 0.5
-            });
-
-            counters.forEach(counter => {
-                observer.observe(counter);
-            });
-        });
-    </script>
-</body></html>
+</html>
