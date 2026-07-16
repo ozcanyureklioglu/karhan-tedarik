@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>İletişim - Karhan Tedarik</title>
+    <meta name="description" content="Karhan Tedarik ile iletişime geçin. Teklif alın ve uzman ekibimizle tanışın." />
+    <meta name="robots" content="index, follow" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="wwwroot/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="wwwroot/css/site.css" />
+</head>
+<body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
+    <div id="navbar-placeholder"></div>
+    <main class="flex-grow">
+        <section class="bg-deep-navy text-surface-container-lowest py-20 px-margin-mobile md:px-margin-desktop text-center">
+            <div class="max-w-container-max-width mx-auto">
+                <h1 class="font-headline-lg text-headline-lg mb-stack-sm">İletişim</h1>
+                <p class="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Uzman ekibimizle iletişime geçin, size özel çözümler sunalım.</p>
+            </div>
+        </section>
+
+        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- İletişim Formu -->
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">Bize Yazın</h2>
+                    <form class="space-y-6" id="contact-form" novalidate>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="name">Ad Soyad</label>
+                            <input class="w-full px-4 py-3 rounded border border-border-gray focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-1 outline-none transition font-body-md text-body-md bg-surface-container-lowest" id="name" name="name" placeholder="Adınız ve soyadınız" required type="text" />
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="email">E-posta</label>
+                            <input class="w-full px-4 py-3 rounded border border-border-gray focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-1 outline-none transition font-body-md text-body-md bg-surface-container-lowest" id="email" name="email" placeholder="ornek@sirket.com" required type="email" />
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="company">Şirket Adı</label>
+                            <input class="w-full px-4 py-3 rounded border border-border-gray focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-1 outline-none transition font-body-md text-body-md bg-surface-container-lowest" id="company" name="company" placeholder="Şirketinizin adı" type="text" />
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="subject">Konu</label>
+                            <select class="w-full px-4 py-3 rounded border border-border-gray focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-1 outline-none transition font-body-md text-body-md bg-surface-container-lowest" id="subject" name="subject">
+                                <option value="">Konu seçiniz</option>
+                                <option value="teklif">Teklif Talebi</option>
+                                <option value="hizmet">Hizmet Bilgisi</option>
+                                <option value="isbirligi">İş Birliği</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="message">Mesajınız</label>
+                            <textarea class="w-full px-4 py-3 rounded border border-border-gray focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-1 outline-none transition font-body-md text-body-md bg-surface-container-lowest" id="message" name="message" placeholder="Mesajınızı buraya yazınız..." required rows="5"></textarea>
+                        </div>
+                        <button class="btn-primary w-full py-4 text-body-md font-body-md" id="submit-btn" type="submit">Mesajı Gönder</button>
+                    </form>
+                </div>
+                <!-- İletişim Bilgileri -->
+                <div>
+                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">İletişim Bilgileri</h2>
+                    <div class="space-y-6">
+                        <div class="corp-card ambient-shadow flex items-start gap-4">
+                            <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">location_on</span>
+                            <div>
+                                <div class="font-label-bold text-label-bold text-deep-navy mb-1">Adres</div>
+                                <p class="font-body-md text-body-md text-secondary">Merkez Mah. Atatürk Cad. No:1<br />İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="corp-card ambient-shadow flex items-start gap-4">
+                            <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">phone</span>
+                            <div>
+                                <div class="font-label-bold text-label-bold text-deep-navy mb-1">Telefon</div>
+                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="tel:+902121234567">+90 (212) 123 45 67</a>
+                            </div>
+                        </div>
+                        <div class="corp-card ambient-shadow flex items-start gap-4">
+                            <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">mail</span>
+                            <div>
+                                <div class="font-label-bold text-label-bold text-deep-navy mb-1">E-posta</div>
+                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="mailto:info@karhan-tedarik.com">info@karhan-tedarik.com</a>
+                            </div>
+                        </div>
+                        <div class="corp-card ambient-shadow flex items-start gap-4">
+                            <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">schedule</span>
+                            <div>
+                                <div class="font-label-bold text-label-bold text-deep-navy mb-1">Çalışma Saatleri</div>
+                                <p class="font-body-md text-body-md text-secondary">Pazartesi - Cuma: 09:00 - 18:00<br />Cumartesi: 09:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="wwwroot/js/components.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            btn.textContent = 'Gönderildi ✓';
+            btn.classList.add('bg-success-green');
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.textContent = 'Mesajı Gönder';
+                btn.classList.remove('bg-success-green');
+                btn.disabled = false;
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

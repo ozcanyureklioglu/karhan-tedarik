@@ -1,0 +1,144 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #f9f9f9;
+    color: #1a1c1c;
+}
+
+/* Typography mappings */
+.font-headline-xl {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+}
+
+.text-headline-xl {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+.font-headline-lg {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.text-headline-lg {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.font-headline-lg-mobile {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.text-headline-lg-mobile {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.font-headline-md {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.text-headline-md {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.font-body-lg {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.text-body-lg {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.font-body-md {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-body-md {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.font-body-sm {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-body-sm {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.font-label-bold {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.text-label-bold {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.font-label-sm {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.text-label-sm {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+/* Custom styles */
+.ambient-shadow {
+    box-shadow: 0px 4px 20px rgba(0, 45, 86, 0.08);
+}
+
+/* Button styles based on guide */
+.btn-primary {
+    @apply bg-primary text-on-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-[#002b4d] active:ring-2 active:ring-tertiary active:ring-offset-2;
+}
+
+.btn-secondary {
+    @apply bg-transparent text-primary border border-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-surface-container-low active:ring-2 active:ring-tertiary active:ring-offset-2;
+}
+
+/* Card styles */
+.corp-card {
+    @apply bg-surface-container-lowest border border-border-gray rounded-lg p-stack-lg;
+}

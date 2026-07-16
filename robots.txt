@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karhan-tedarik.com/sitemap.xml

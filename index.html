@@ -1,328 +1,58 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="tr">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>LogiProcure Enterprise - Global Tedarik ve Lojistik Çözümleri</title>
+    <title>Karhan Tedarik - Global Tedarik ve Lojistik Çözümleri</title>
+    <meta name="description"
+        content="Karhan Tedarik; stratejik satın alma, tedarik zinciri yönetimi ve global lojistik alanlarında kurumsal çözümler sunar." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://karhan-tedarik.com/index.html" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed": "#001c38",
-                        "on-secondary-container": "#606367",
-                        "surface-container-low": "#f3f3f3",
-                        "primary-fixed": "#d3e4ff",
-                        "on-error-container": "#93000a",
-                        "surface": "#f9f9f9",
-                        "outline": "#727781",
-                        "on-tertiary": "#ffffff",
-                        "inverse-on-surface": "#f1f1f1",
-                        "on-surface": "#1a1c1c",
-                        "border-gray": "#D1D1D1",
-                        "surface-variant": "#e2e2e2",
-                        "on-secondary-fixed": "#191c1f",
-                        "tertiary-fixed-dim": "#81cfff",
-                        "on-secondary": "#ffffff",
-                        "on-primary": "#ffffff",
-                        "primary-container": "#005596",
-                        "primary": "#003e6f",
-                        "surface-container-highest": "#e2e2e2",
-                        "secondary-fixed": "#e1e2e7",
-                        "background": "#f9f9f9",
-                        "on-error": "#ffffff",
-                        "surface-container-high": "#e8e8e8",
-                        "inverse-surface": "#2f3131",
-                        "on-background": "#1a1c1c",
-                        "success-green": "#28A745",
-                        "deep-navy": "#002D56",
-                        "secondary": "#5c5f63",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-primary": "#a2c9ff",
-                        "outline-variant": "#c1c7d2",
-                        "surface-container": "#eeeeee",
-                        "slate-gray": "#333F48",
-                        "primary-fixed-dim": "#a2c9ff",
-                        "secondary-container": "#dee0e4",
-                        "on-primary-container": "#a4caff",
-                        "secondary-fixed-dim": "#c4c6cb",
-                        "tertiary": "#00415c",
-                        "on-tertiary-fixed-variant": "#004c6b",
-                        "surface-dim": "#dadada",
-                        "error": "#ba1a1a",
-                        "text-main": "#1A1A1A",
-                        "surface-bright": "#f9f9f9",
-                        "surface-tint": "#1b60a2",
-                        "on-primary-fixed-variant": "#004881",
-                        "on-secondary-fixed-variant": "#44474b",
-                        "on-tertiary-container": "#83d0ff",
-                        "tertiary-fixed": "#c6e7ff",
-                        "on-tertiary-fixed": "#001e2d",
-                        "tertiary-container": "#00597c",
-                        "on-surface-variant": "#414750"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "margin-desktop": "40px",
-                        "stack-md": "16px",
-                        "stack-lg": "32px",
-                        "gutter": "24px",
-                        "container-max-width": "1280px",
-                        "stack-sm": "8px",
-                        "margin-mobile": "16px",
-                        "unit": "8px"
-                    },
-                    "fontFamily": {
-                        "headline-lg-mobile": ["Hanken Grotesk"],
-                        "body-sm": ["Hanken Grotesk"],
-                        "headline-lg": ["Hanken Grotesk"],
-                        "body-md": ["Hanken Grotesk"],
-                        "label-bold": ["Hanken Grotesk"],
-                        "headline-xl": ["Hanken Grotesk"],
-                        "label-sm": ["Hanken Grotesk"],
-                        "body-lg": ["Hanken Grotesk"],
-                        "headline-md": ["Hanken Grotesk"]
-                    },
-                    "fontSize": {
-                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
-                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "label-bold": ["14px", { "lineHeight": "16px", "fontWeight": "600" }],
-                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Hanken Grotesk', sans-serif;
-            background-color: #f9f9f9;
-            color: #1a1c1c;
-        }
-
-        /* Typography mappings */
-        .font-headline-xl {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -0.02em;
-        }
-
-        .text-headline-xl {
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -0.02em;
-            font-weight: 700;
-        }
-
-        .font-headline-lg {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 40px;
-        }
-
-        .text-headline-lg {
-            font-size: 32px;
-            line-height: 40px;
-            font-weight: 700;
-        }
-
-        .font-headline-lg-mobile {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        .text-headline-lg-mobile {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 700;
-        }
-
-        .font-headline-md {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        .text-headline-md {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 600;
-        }
-
-        .font-body-lg {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-        }
-
-        .text-body-lg {
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 400;
-        }
-
-        .font-body-md {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        .text-body-md {
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-        }
-
-        .font-body-sm {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        .text-body-sm {
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 400;
-        }
-
-        .font-label-bold {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 16px;
-        }
-
-        .text-label-bold {
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: 600;
-        }
-
-        .font-label-sm {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 16px;
-        }
-
-        .text-label-sm {
-            font-size: 12px;
-            line-height: 16px;
-            font-weight: 500;
-        }
-
-        /* Custom styles */
-        .ambient-shadow {
-            box-shadow: 0px 4px 20px rgba(0, 45, 86, 0.08);
-        }
-
-        /* Button styles based on guide */
-        .btn-primary {
-            @apply bg-primary text-on-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-[#002b4d] active:ring-2 active:ring-tertiary active:ring-offset-2;
-        }
-
-        .btn-secondary {
-            @apply bg-transparent text-primary border border-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-surface-container-low active:ring-2 active:ring-tertiary active:ring-offset-2;
-        }
-
-        /* Card styles */
-        .corp-card {
-            @apply bg-surface-container-lowest border border-border-gray rounded-lg p-stack-lg;
-        }
-    </style>
+    <script src="wwwroot/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="wwwroot/css/site.css" />
 </head>
 
 <body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
-    <!-- TopNavBar: {{DATA:COMPONENTS:COMPONENTS_2}} -->
-    <nav
-        class="bg-surface-container-lowest dark:bg-surface-dim font-body-md text-body-md w-full sticky top-0 z-50 border-b border-border-gray dark:border-outline-variant flat no shadows">
-        <div
-            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto w-full">
-            <div class="flex items-center gap-3">
-                <img src="wwwroot/assets/logo.jpeg" alt="Logo" class="h-10 w-auto rounded object-cover" />
-                <div class="font-headline-md text-headline-md font-bold text-deep-navy dark:text-primary-fixed-dim">
-                    Karhan Tedarik
-                </div>
-            </div>
-            <div class="hidden md:flex gap-8">
-                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
-                    href="#services">Services</a>
-                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
-                    href="#partners">Partners</a>
-                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
-                    href="#case-studies">Case Studies</a>
-                <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-on-primary-container transition-colors"
-                    href="#about">About Us</a>
-            </div>
-            <div class="hidden md:flex items-center gap-4">
-                <button class="btn-secondary">Login</button>
-                <button class="btn-primary">Get a Quote</button>
-            </div>
-            <!-- Mobile Menu Button (Placeholder for simplicity) -->
-            <button class="md:hidden text-primary">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </nav>
+
+    <div id="navbar-placeholder"></div>
+
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Hero Bölümü -->
+        <section class="relative w-full h-[400px] flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <video autoplay="" class="object-cover w-full h-full" loop="" muted="" playsinline="">
-                    <source
-                        src="wwwroot/assets/video1.mp4"
-                        type="video/mp4" />
+                <video autoplay class="object-cover w-full h-full" loop muted playsinline>
+                    <source src="wwwroot/assets/video1.mp4" type="video/mp4" />
                 </video>
-                <div class="absolute inset-0 bg-deep-navy bg-opacity-70"></div>
+                <div class="absolute inset-0 bg-slate-gray bg-opacity-30"></div>
             </div>
             <div
                 class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center text-surface-container-lowest">
                 <h1
                     class="font-headline-xl text-headline-xl md:font-headline-xl md:text-headline-xl font-headline-lg-mobile text-headline-lg-mobile mb-stack-md">
-                    Global Tedarik ve Lojistik Çözümleri</h1>
-                <p class="font-body-lg text-body-lg mb-stack-lg max-w-3xl mx-auto opacity-90">Dünyanın dört bir yanına
-                    güvenli, hızlı ve optimize edilmiş tedarik zinciri yönetimi ile kurumsal operasyonlarınızı
-                    güçlendiriyoruz.</p>
-                <button class="btn-primary text-body-lg font-body-lg px-8 py-4">Hizmetlerimizi İnceleyin</button>
+                    Global Tedarik ve Lojistik Çözümleri
+                </h1>
+                <p class="font-body-lg text-body-lg mb-stack-lg max-w-3xl mx-auto opacity-90">
+                    Dünyanın dört bir yanına güvenli, hızlı ve optimize edilmiş tedarik zinciri yönetimi ile kurumsal
+                    operasyonlarınızı güçlendiriyoruz.
+                </p>
+                <a href="hizmetler.html" class="btn-primary text-body-lg font-body-lg px-8 py-4">Hizmetlerimizi
+                    İnceleyin</a>
             </div>
         </section>
-        <!-- Services Section -->
-        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="services">
+
+        <!-- Hizmetler Bölümü -->
+        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="hizmetler">
             <div class="text-center mb-16">
                 <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Uzmanlık Alanlarımız</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-                <!-- Service Card 1 -->
                 <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
                         style="font-variation-settings: 'FILL' 0;">inventory_2</span>
@@ -330,7 +60,6 @@
                     <p class="font-body-md text-body-md text-secondary">Maliyetleri optimize ederken kalite
                         standartlarını yükselten, veriye dayalı stratejik tedarik süreçleri sunuyoruz.</p>
                 </div>
-                <!-- Service Card 2 -->
                 <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
                         style="font-variation-settings: 'FILL' 0;">account_tree</span>
@@ -339,7 +68,6 @@
                     <p class="font-body-md text-body-md text-secondary">Uçtan uca şeffaflık sağlayan, entegre ve
                         sürdürülebilir tedarik zinciri çözümleri ile operasyonel riskleri minimize ediyoruz.</p>
                 </div>
-                <!-- Service Card 3 -->
                 <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
                         style="font-variation-settings: 'FILL' 0;">flight_takeoff</span>
@@ -349,14 +77,14 @@
                 </div>
             </div>
         </section>
-        <!-- Partners Section -->
+
+        <!-- Referanslar Bölümü -->
         <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-y border-border-gray"
-            id="partners">
+            id="referanslar">
             <div class="max-w-container-max-width mx-auto">
                 <h2 class="font-headline-md text-headline-md text-center text-secondary mb-12">Çalıştığımız Firmalar
                 </h2>
                 <div class="flex flex-wrap justify-center items-center gap-12 opacity-60">
-                    <!-- Placeholder Logos -->
                     <div class="font-headline-md text-headline-md font-bold text-slate-gray">PARTNER<span
                             class="text-primary">ONE</span></div>
                     <div class="font-headline-md text-headline-md font-bold text-slate-gray">GLOBAL<span
@@ -370,39 +98,39 @@
                 </div>
             </div>
         </section>
-        <!-- About Us Section -->
-        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="about">
+
+        <!-- Hakkımızda Bölümü -->
+        <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="hakkimizda">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-md">Kurumsal Güvenilirlik ve
                         Mükemmellik</h2>
-                    <p class="font-body-md text-body-md text-secondary mb-stack-md">LogiProcure Enterprise, karmaşık
-                        tedarik ağlarını yönetmek üzere tasarlanmış, endüstri lideri bir platformdur. Amacımız,
-                        işletmelere kararlı, profesyonel ve kesin sonuçlar veren bir altyapı sağlamaktır.</p>
+                    <p class="font-body-md text-body-md text-secondary mb-stack-md">Karhan Tedarik, karmaşık tedarik
+                        ağlarını yönetmek üzere tasarlanmış, endüstri lideri bir platformdur. Amacımız, işletmelere
+                        kararlı, profesyonel ve kesin sonuçlar veren bir altyapı sağlamaktır.</p>
                     <p class="font-body-md text-body-md text-secondary">Verimlilik ve güvenliği temel alarak, tedarik
                         süreçlerinizi dijitalleştiriyor ve kurumsal hedeflerinize ulaşmanızı hızlandırıyoruz.</p>
+                    <a href="hakkimizda.html" class="btn-secondary mt-6 inline-block">Daha Fazla Bilgi</a>
                 </div>
                 <div class="relative h-96 rounded-lg overflow-hidden ambient-shadow">
                     <div class="absolute inset-0 bg-cover bg-center"
-                        data-alt="A modern, immaculate corporate control room or command center used for monitoring global logistics. The room features multiple large, glowing digital displays showing maps and data metrics. Experienced professionals in sharp business attire are analyzing the data in a brightly lit, high-contrast environment. The overall tone is highly professional, secure, and technologically advanced, dominated by crisp whites, neutral grays, and corporate blue tones."
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZbAstMlw5M24rdNMzaRkUu7GyT1C60s-5jLZOH1nasHwuMaobFq3-iRCvuOQD-vwr8R-VfbKIpluZ7yrIbZ1x2rn3t9vVnVz6oVlPoRXdZUEtsOUNBhkY6I4zmKNONbkbAUN880uec_GeOE3LOwTtagAdnGCCEBtgf15WClITWQtGwwD6ei5ZInfFyGE7z15M393hRlgksbO5gOfoqiUSRmvnpTXFEQxWAaoT3Lo6Hk7Xj4SziJKV')">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Case Studies Section (Bento Grid) -->
+
+        <!-- Başarı Hikayeleri Bölümü -->
         <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-t border-border-gray"
-            id="case-studies">
+            id="basari-hikayeleri">
             <div class="max-w-container-max-width mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Başarı Hikayeleri</h2>
                     <div class="w-24 h-1 bg-primary mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[250px]">
-                    <!-- Case Study 1 - Large -->
                     <div class="md:col-span-2 corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                            data-alt="A massive, pristine commercial cargo ship navigating a calm, deep blue ocean under a clear, bright sky. The ship is loaded with vibrant, cleanly stacked shipping containers. The lighting is crisp and natural, highlighting the sheer scale and efficiency of global maritime logistics. The aesthetic is clean, high-contrast, and professional."
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-LxDnb0L-vyq5YbybMuzk1FiIM5aXRb06TBBf4-3zuUvyCOCBuxyfCV-PiE7AZWcBXC81h4Lk4iGv9_M7yxCsBklrrKePyVyDBoJUYA23f3yDQHB08mJoXueWXPyA4WVnOmx45Lxoob4rMDIZJbQku_UmL7Kh4apwuSp7KLQpIwhjpg1MqaXOKLDted-BV7Omj-_R0xDY7RNxRYdm86X-zbCJabO8_RYHYP7SzsSzVa2g-ocVRjZC')">
                         </div>
                         <div
@@ -418,10 +146,8 @@
                                 azaltan yeni nesil rotalama stratejisi.</p>
                         </div>
                     </div>
-                    <!-- Case Study 2 -->
                     <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                            data-alt="An advanced, automated pharmaceutical warehouse interior. Clean, white robotic arms are carefully moving neatly packaged medical supplies along a conveyor belt. The environment is sterile, extremely brightly lit, and highly organized, conveying precision and reliability. The color scheme is predominantly bright white and cool clinical blue."
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-6OGWAMOTT8evCLYh2sOBiYI0v8xAW_xPA23Ca707xiHRiQGaMWuNAiWoHmtqEf80NsC2m7tsyGheOvvZL7RtTLA4Z6b04RvjCuQ8OqSIlUIKSZcLQspdldXcX9GtZZCK24RepwsV6DUA7s34xzoXdf_3ZIJX6flo1wk2DBOnf4NVAjb_PZRjyvz7Tb1VkiGnHjweHuTcTWQQm071RoCqyy6P0HJt9Q2UyueDQoHLg9cKqniiXIIZ')">
                         </div>
                         <div
@@ -436,10 +162,8 @@
                                 toleranslı lojistik.</p>
                         </div>
                     </div>
-                    <!-- Case Study 3 -->
                     <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                            data-alt="A modern, sleek fleet of electric corporate delivery trucks parked in a perfectly aligned row outside a large, contemporary distribution center. The trucks are pristine white with subtle corporate blue branding elements. The scene is lit by bright daylight, emphasizing a clean, sustainable, and highly professional corporate logistics operation."
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuLVMMCj_vCWKYfP-N3OBiFsXGoVxFtose3Fs4ZUGcSXsxra0rTX3YPK_eR873UEXtg-kBmh6C7mSbgyQid_fh9MvvYU_d_wEkfBzzS_JEHMQcCgUd7gJhFK3qu0Enbii8jaNnlS-D1SCyw03_dZoA1l85Qo6p0Jyk9f49hhUT8bdhxgBguXR833cl4nRKrQhfNIZSlrlDH0bOxhH7F3niotgVo2h8YMr8u1Zf3yCkW5gcJqZGx5nb')">
                         </div>
                         <div
@@ -453,18 +177,18 @@
                                 hız.</p>
                         </div>
                     </div>
-                    <!-- Case Study 4 (Filling the grid) -->
                     <div
                         class="md:col-span-2 corp-card bg-primary-container text-on-primary-container flex flex-col justify-center items-center text-center p-stack-lg">
-                        <h3 class="font-headline-md text-headline-md mb-stack-md">Tüm Vaka Çalışmalarını İnceleyin</h3>
-                        <button
-                            class="btn-primary bg-surface-container-lowest text-primary hover:bg-surface border-none shadow-sm">Raporları
-                            Görüntüle</button>
+                        <h3 class="font-headline-md text-headline-md mb-stack-md">Tüm Başarı Hikayelerini İnceleyin</h3>
+                        <a href="basari-hikayeleri.html"
+                            class="btn-primary bg-surface-container-lowest text-primary hover:bg-surface border-none shadow-sm">Tümünü
+                            Görüntüle</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact / CTA Section -->
+
+        <!-- İletişim / CTA Bölümü -->
         <section
             class="py-24 px-margin-mobile md:px-margin-desktop bg-deep-navy text-surface-container-lowest text-center">
             <div class="max-w-3xl mx-auto">
@@ -473,50 +197,21 @@
                 <p class="font-body-lg text-body-lg mb-stack-lg opacity-90">Uzman ekibimizle iletişime geçin,
                     işletmenize özel tedarik ve lojistik stratejilerini birlikte planlayalım.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <button
-                        class="btn-primary bg-surface-container-lowest text-deep-navy hover:bg-surface text-body-md font-body-md px-8 py-4">Get
-                        a Quote</button>
-                    <button
+                    <a href="iletisim.html"
+                        class="btn-primary bg-surface-container-lowest text-deep-navy hover:bg-surface text-body-md font-body-md px-8 py-4">Teklif
+                        Al</a>
+                    <a href="iletisim.html"
                         class="btn-secondary text-surface-container-lowest border-surface-container-lowest hover:bg-surface-tint hover:border-surface-tint text-body-md font-body-md px-8 py-4">Satış
-                        Ekibiyle İletişime Geç</button>
+                        Ekibiyle İletişime Geç</a>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer: {{DATA:COMPONENTS:COMPONENTS_2}} -->
-    <footer
-        class="bg-slate-gray dark:bg-inverse-surface text-surface-container-lowest dark:text-surface-bright font-body-sm text-body-sm border-t border-outline dark:border-outline-variant flat no shadows">
-        <div
-            class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-start gap-gutter">
-            <div>
-                <div class="flex items-center gap-3 mb-stack-sm">
-                    <img src="wwwroot/assets/logo.jpeg" alt="Logo" class="h-8 w-auto rounded object-cover" />
-                    <div class="font-headline-sm text-headline-sm font-bold text-surface-container-lowest">
-                        LogiProcure Enterprise
-                    </div>
-                </div>
-                <p class="opacity-70 mt-4">© 2024 LogiProcure Enterprise Solutions. All rights reserved.</p>
-            </div>
-            <div class="flex flex-col md:flex-row gap-8 md:gap-16">
-                <div class="flex flex-col gap-4">
-                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
-                        href="#">Privacy Policy</a>
-                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
-                        href="#">Terms of Service</a>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
-                        href="#">Compliance</a>
-                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline"
-                        href="#">Global Offices</a>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <a class="text-secondary-fixed dark:text-secondary-fixed-dim hover:text-tertiary-fixed transition-colors active:underline font-bold text-primary-fixed-dim"
-                        href="#">Contact Support</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="wwwroot/js/tailwind-config.js"></script>
+    <script src="wwwroot/js/components.js"></script>
 </body>
 
 </html>
