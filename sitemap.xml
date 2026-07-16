@@ -1,39 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://karhan-tedarik.com/index.html</loc>
+        <loc>https://karhantedarik.com/index.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://karhan-tedarik.com/hizmetler.html</loc>
+        <loc>https://karhantedarik.com/hizmetler.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://karhan-tedarik.com/referanslar.html</loc>
+        <loc>https://karhantedarik.com/referanslar.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karhan-tedarik.com/basari-hikayeleri.html</loc>
+        <loc>https://karhantedarik.com/basari-hikayeleri.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karhan-tedarik.com/hakkimizda.html</loc>
+        <loc>https://karhantedarik.com/hakkimizda.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://karhan-tedarik.com/iletisim.html</loc>
+        <loc>https://karhantedarik.com/iletisim.html</loc>
         <lastmod>2025-07-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
+

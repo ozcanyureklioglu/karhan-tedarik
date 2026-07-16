@@ -1,17 +1,76 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Hizmetlerimiz - Karhan Tedarik</title>
-    <meta name="description" content="Karhan Tedarik'in sunduğu stratejik satın alma, tedarik zinciri yönetimi ve global lojistik hizmetleri hakkında detaylı bilgi alın." />
+    <meta name="description" content="Karhan Tedarik'in sunduğu stratejik satın alma, tedarik zinciri yönetimi ve lojistik hizmetleri hakkında detaylı bilgi alın." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://karhan-tedarik.com/hizmetler.html" />
+    <link rel="canonical" href="https://karhantedarik.com/hizmetler.html" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <!-- Schema Markup: Service Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Karhan Tedarik Hizmetleri",
+        "description": "Tedarik zinciri ve lojistik çözümleri",
+        "url": "https://karhantedarik.com/hizmetler.html",
+        "provider": {
+            "@type": "Organization",
+            "@id": "https://karhantedarik.com/#organization",
+            "name": "Karhan Tedarik",
+            "telephone": "+905324472171",
+            "email": "karhantedarik@gmail.com"
+        },
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Service",
+                    "name": "Stratejik Satın Alma",
+                    "description": "Maliyetleri optimize ederken kalite standartlarını yükselten, veriye dayalı stratejik tedarik süreçleri.",
+                    "provider": { "@id": "https://karhantedarik.com/#organization" }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Service",
+                    "name": "Tedarik Zinciri Yönetimi",
+                    "description": "Uçtan uca şeffaflık sağlayan, entegre ve sürdürülebilir tedarik zinciri çözümleri.",
+                    "provider": { "@id": "https://karhantedarik.com/#organization" }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Service",
+                    "name": "Lojistik",
+                    "description": "Uluslararası standartlarda, zamanında ve güvenli teslimat garantisi ile lojistik operasyonlar.",
+                    "provider": { "@id": "https://karhantedarik.com/#organization" }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "Service",
+                    "name": "Danışmanlık ve Analitik",
+                    "description": "Veriye dayalı içgörüler ve uzman danışmanlık hizmetleri ile tedarik operasyonlarınızı sürekli iyileştiriyoruz.",
+                    "provider": { "@id": "https://karhantedarik.com/#organization" }
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
 
@@ -56,7 +115,7 @@
 
                 <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300">
                     <span class="material-symbols-outlined text-5xl text-primary mb-stack-md" style="font-variation-settings: 'FILL' 0;">flight_takeoff</span>
-                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Global Lojistik</h2>
+                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Lojistik</h2>
                     <p class="font-body-md text-body-md text-secondary mb-4">Uluslararası standartlarda, zamanında ve güvenli teslimat garantisi ile sınırları aşan lojistik operasyonlar yönetiyoruz.</p>
                     <ul class="font-body-sm text-body-sm text-secondary space-y-2">
                         <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Hava, Deniz ve Kara Taşımacılığı</li>
@@ -96,3 +155,5 @@
     <script src="wwwroot/js/components.js"></script>
 </body>
 </html>
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="tr">
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <!-- Schema Markup: CollectionPage + CaseStudies -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": "https://karhantedarik.com/basari-hikayeleri.html",
+                "url": "https://karhantedarik.com/basari-hikayeleri.html",
+                "name": "Başarı Hikayeleri - Karhan Tedarik",
+                "description": "Karhan Tedarik'in farklı sektörlerdeki müşterileri için gerçekleştirdiği başarılı projeleri inceleyin.",
+                "inLanguage": "tr",
+                "isPartOf": { "@id": "https://karhantedarik.com/#website" },
+                "about": { "@id": "https://karhantedarik.com/#organization" }
+            },
+            {
+                "@type": "ItemList",
+                "name": "Başarı Hikayeleri",
+                "url": "https://karhantedarik.com/basari-hikayeleri.html",
+                "numberOfItems": 2,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Uzak Doğu Tedarik Ağı Optimizasyonu",
+                        "description": "Büyük üretim devi için tedarik süresini %30 azaltan yeni nesil rotalama stratejisi. 12 aylık süreçte 8 ülkedeki tedarikçi ağı yeniden yapılandırıldı."
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Soğuk Zincir Yönetimi",
+                        "description": "Hassas medikal ürünler için sıfır hata toleranslı soğuk zincir lojistik sistemi kurularak ürün kayıpları sıfıra indirildi."
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
     <div id="navbar-placeholder"></div>
@@ -58,7 +96,7 @@
                     <div class="md:col-span-2">
                         <span class="inline-block bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-1 rounded mb-3">Üretim Sektörü</span>
                         <h3 class="font-headline-md text-headline-md text-deep-navy mb-3">Uzak Doğu Tedarik Ağı Optimizasyonu</h3>
-                        <p class="font-body-md text-body-md text-secondary mb-4">Global üretim devi için tedarik süresini %30 azaltan yeni nesil rotalama stratejisi geliştirdik. 12 aylık süreçte 8 ülkedeki tedarikçi ağını yeniden yapılandırdık.</p>
+                        <p class="font-body-md text-body-md text-secondary mb-4">Büyük üretim devi için tedarik süresini %30 azaltan yeni nesil rotalama stratejisi geliştirdik. 12 aylık süreçte 8 ülkedeki tedarikçi ağını yeniden yapılandırdık.</p>
                         <div class="flex gap-6">
                             <div class="text-center"><div class="font-headline-md text-headline-md text-primary font-bold">%30</div><div class="font-body-sm text-body-sm text-secondary">Süre Azalması</div></div>
                             <div class="text-center"><div class="font-headline-md text-headline-md text-primary font-bold">₺5M</div><div class="font-body-sm text-body-sm text-secondary">Tasarruf</div></div>
@@ -88,3 +126,4 @@
     <script src="wwwroot/js/components.js"></script>
 </body>
 </html>
+

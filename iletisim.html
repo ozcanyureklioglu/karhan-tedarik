@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="tr">
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <!-- Schema Markup: ContactPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ContactPage",
+                "@id": "https://karhantedarik.com/iletisim.html",
+                "url": "https://karhantedarik.com/iletisim.html",
+                "name": "İletişim - Karhan Tedarik",
+                "description": "Karhan Tedarik ile iletişime geçin. Teklif alın ve uzman ekibimizle tanışın.",
+                "inLanguage": "tr",
+                "isPartOf": { "@id": "https://karhantedarik.com/#website" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://karhantedarik.com/#organization",
+                "name": "Karhan Tedarik",
+                "telephone": "+905324472171",
+                "email": "karhantedarik@gmail.com",
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "telephone": "+905324472171",
+                        "email": "karhantedarik@gmail.com",
+                        "contactType": "customer service",
+                        "areaServed": "TR",
+                        "availableLanguage": "Turkish",
+                        "hoursAvailable": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+                            ],
+                            "opens": "09:00",
+                            "closes": "18:00"
+                        }
+                    },
+                    {
+                        "@type": "ContactPoint",
+                        "telephone": "+905324472171",
+                        "contactType": "sales",
+                        "areaServed": "TR",
+                        "availableLanguage": "Turkish"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
     <div id="navbar-placeholder"></div>
@@ -79,7 +128,7 @@
                             <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">mail</span>
                             <div>
                                 <div class="font-label-bold text-label-bold text-deep-navy mb-1">E-posta</div>
-                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="mailto:info@karhan-tedarik.com">info@karhan-tedarik.com</a>
+                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="mailto:info@karhantedarik.com">info@karhantedarik.com</a>
                             </div>
                         </div>
                         <div class="corp-card ambient-shadow flex items-start gap-4">
@@ -113,3 +162,4 @@
     </script>
 </body>
 </html>
+

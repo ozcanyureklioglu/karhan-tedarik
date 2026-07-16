@@ -1,4 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://karhan-tedarik.com/sitemap.xml
+Sitemap: https://karhantedarik.com/sitemap.xml
+

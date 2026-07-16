@@ -1,4 +1,4 @@
-// Aktif sayfayı otomatik algıla
+﻿// Aktif sayfayı otomatik algıla
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 const navLinks = [
@@ -58,7 +58,7 @@ function renderFooter() {
                         <img src="wwwroot/assets/logo.jpeg" alt="Kar-Han Tedarik Logosu" class="h-8 w-auto rounded object-cover" />
                         <div class="font-bold text-surface-container-lowest text-lg">Karhan Tedarik</div>
                     </div>
-                    <p class="opacity-70 text-sm leading-relaxed">Global tedarik zinciri ve lojistik çözümlerinde güvenilir iş ortağınız.</p>
+                    <p class="opacity-70 text-sm leading-relaxed">Tedarik zinciri ve lojistik çözümlerinde güvenilir iş ortağınız.</p>
                 </div>
                 <div>
                     <h4 class="font-bold text-surface-container-lowest mb-4">Sayfalar</h4>
@@ -104,3 +104,4 @@ function initComponents() {
 }
 
 document.addEventListener('DOMContentLoaded', initComponents);
+

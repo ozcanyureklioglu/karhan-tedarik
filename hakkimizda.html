@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="tr">
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <!-- Schema Markup: AboutPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "AboutPage",
+                "@id": "https://karhantedarik.com/hakkimizda.html",
+                "url": "https://karhantedarik.com/hakkimizda.html",
+                "name": "Hakkımızda - Karhan Tedarik",
+                "description": "Karhan Tedarik hakkında bilgi edinin. Misyonumuz, vizyonumuz ve ekibimizi tanıyın.",
+                "inLanguage": "tr",
+                "isPartOf": { "@id": "https://karhantedarik.com/#website" },
+                "about": { "@id": "https://karhantedarik.com/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://karhantedarik.com/#organization",
+                "name": "Karhan Tedarik",
+                "telephone": "+905324472171",
+                "email": "karhantedarik@gmail.com",
+                "foundingDate": "2024",
+                "description": "Karmaşık tedarik ağlarını yönetmek üzere tasarlanmış, endüstri lideri bir platform.",
+                "knowsAbout": [
+                    "Tedarik Zinciri Yönetimi",
+                    "Lojistik",
+                    "Stratejik Satın Alma",
+                    "İthalat ve İhracat"
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-background text-on-background antialiased flex flex-col min-h-screen">
     <div id="navbar-placeholder"></div>
@@ -18,7 +51,7 @@
         <section class="bg-deep-navy text-surface-container-lowest py-20 px-margin-mobile md:px-margin-desktop text-center">
             <div class="max-w-container-max-width mx-auto">
                 <h1 class="font-headline-lg text-headline-lg mb-stack-sm">Hakkımızda</h1>
-                <p class="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Kurumsal güvenilirlik ve mükemmelliği temel alarak global tedarik çözümleri sunuyoruz.</p>
+                <p class="font-body-lg text-body-lg opacity-80 max-w-2xl mx-auto">Kurumsal güvenilirlik ve mükemmelliği temel alarak tedarik çözümleri sunuyoruz.</p>
             </div>
         </section>
 
@@ -43,7 +76,7 @@
                 <div class="corp-card ambient-shadow border-l-4 border-tertiary">
                     <span class="material-symbols-outlined text-3xl text-tertiary mb-3" style="font-variation-settings: 'FILL' 0;">visibility</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-3">Vizyonumuz</h3>
-                    <p class="font-body-md text-body-md text-secondary">Türkiye'nin en güvenilir global tedarik yönetimi firması olmak ve uluslararası arenada Türk işletmelerini en iyi şekilde temsil etmek.</p>
+                    <p class="font-body-md text-body-md text-secondary">Türkiye'nin en güvenilir tedarik yönetimi firması olmak ve uluslararası arenada Türk işletmelerini en iyi şekilde temsil etmek.</p>
                 </div>
             </div>
         </section>
@@ -93,3 +126,5 @@
     <script src="wwwroot/js/components.js"></script>
 </body>
 </html>
+
+
