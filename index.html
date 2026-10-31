@@ -16,6 +16,13 @@
         rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="wwwroot/css/animations.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
+    <script defer src="wwwroot/js/animations.js"></script>
     
     <!-- Open Graph / Sosyal Medya -->
     <meta property="og:type" content="website" />
@@ -48,8 +55,10 @@
                 "email": "karhantedarik@gmail.com",
                 "address": {
                     "@type": "PostalAddress",
-                    "addressCountry": "TR",
-                    "addressLocality": "İstanbul"
+                    "streetAddress": "Atıfbey Mah. 67. Sok. No:33/32",
+                    "addressLocality": "Gaziemir",
+                    "addressRegion": "İzmir",
+                    "addressCountry": "TR"
                 },
                 "areaServed": {
                     "@type": "Country",
@@ -120,7 +129,7 @@
 
     <main class="flex-grow">
         <!-- Hero Bölümü -->
-        <section class="relative w-full h-[400px] flex items-center justify-center overflow-hidden">
+        <section class="relative w-full min-h-[400px] py-12 md:py-0 flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <video autoplay class="object-cover w-full h-full" loop muted playsinline>
                     <source src="wwwroot/assets/video1.mp4" type="video/mp4" />
@@ -130,7 +139,7 @@
             <div
                 class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center text-surface-container-lowest">
                 <h1
-                    class="font-headline-xl text-headline-xl md:font-headline-xl md:text-headline-xl font-headline-lg-mobile text-headline-lg-mobile mb-stack-md">
+                    class="font-headline-lg text-headline-lg md:font-headline-xl md:text-headline-xl mb-stack-md">
                     Tedarik ve Lojistik Çözümleri
                 </h1>
                 <p class="font-body-lg text-body-lg mb-stack-lg max-w-3xl mx-auto opacity-90">
@@ -144,25 +153,25 @@
 
         <!-- Hizmetler Bölümü -->
         <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="hizmetler">
-            <div class="text-center mb-16">
+            <div data-aos="fade-up" class="text-center mb-16">
                 <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Ürün ve Hizmet Gruplarımız</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
+                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md"
                         style="font-variation-settings: 'FILL' 0;">sensor_door</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Fotoselli Kapı Sistemleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Modern, estetik ve yüksek performanslı otomatik kapı mekanizmaları, yedek parçaları ve anahtar teslim kurulum çözümleri.</p>
                 </div>
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
-                    <span class="material-symbols-outlined text-4xl text-secondary mb-stack-md"
+                <div data-aos="fade-up" data-aos-delay="100" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
+                    <span class="material-symbols-outlined kh-icon kh-icon--chair text-4xl text-secondary mb-stack-md" aria-hidden="true"
                         style="font-variation-settings: 'FILL' 0;">chair</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Profesyonel Çalışma Koltukları</h3>
                     <p class="font-body-md text-body-md text-secondary">Ergonomik, şık ve dayanıklı oturma grubu çözümleriyle ofislerinizde verimliliği artırıyoruz.</p>
                 </div>
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
-                    <span class="material-symbols-outlined text-4xl text-tertiary mb-stack-md"
+                <div data-aos="fade-up" data-aos-delay="200" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
+                    <span class="material-symbols-outlined kh-icon kh-icon--drop text-4xl text-tertiary mb-stack-md" aria-hidden="true"
                         style="font-variation-settings: 'FILL' 0;">water_drop</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Endüstriyel Tuz Tedariği</h3>
                     <p class="font-body-md text-body-md text-secondary">Arıtma tesislerinden gıdaya, kimyadan tekstile kadar yüksek saflıkta endüstriyel tuz çeşitleri.</p>
@@ -174,19 +183,25 @@
         <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-y border-border-gray"
             id="referanslar">
             <div class="max-w-container-max-width mx-auto">
-                <h2 class="font-headline-md text-headline-md text-center text-secondary mb-12">Çalıştığımız Firmalar
+                <h2 data-aos="fade-up" class="font-headline-md text-headline-md text-center text-secondary mb-12">Çalıştığımız Firmalar
                 </h2>
-                <div class="flex flex-wrap justify-center items-center gap-12 opacity-60">
-                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">PARTNER<span
-                            class="text-primary">ONE</span></div>
-                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">MERKEZ<span
-                            class="text-primary">INC</span></div>
-                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">SYS<span
-                            class="text-primary">CORP</span></div>
-                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">NEXUS<span
-                            class="text-primary">LOG</span></div>
-                    <div class="font-headline-md text-headline-md font-bold text-slate-gray">OMEGA<span
-                            class="text-primary">IND</span></div>
+                <div class="kh-marquee">
+                    <div class="kh-marquee__track">
+                    <div class="kh-marquee__group">
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">PARTNER<span class="text-primary">ONE</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">MERKEZ<span class="text-primary">INC</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">SYS<span class="text-primary">CORP</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">NEXUS<span class="text-primary">LOG</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">OMEGA<span class="text-primary">IND</span></div>
+                    </div>
+                    <div class="kh-marquee__group" aria-hidden="true">
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">PARTNER<span class="text-primary">ONE</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">MERKEZ<span class="text-primary">INC</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">SYS<span class="text-primary">CORP</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">NEXUS<span class="text-primary">LOG</span></div>
+                        <div class="kh-marquee__item font-headline-md text-headline-md font-bold text-slate-gray">OMEGA<span class="text-primary">IND</span></div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,17 +209,100 @@
         <!-- Hakkımızda Bölümü -->
         <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto" id="hakkimizda">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div>
+                <div data-aos="fade-right">
                     <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-md">Işletmenizin Güçlü Çözüm Ortağı</h2>
                     <p class="font-body-md text-body-md text-primary font-semibold mb-stack-sm">Doğru Tedarik, Kesintisiz Hizmet!</p>
                     <p class="font-body-md text-body-md text-secondary mb-stack-md">Farklı sektörlerin en temel ve kritik ihtiyaçlarını tek bir çatı altında, yüksek kalite ve kesintisiz hizmet anlayışıyla karşılayan güvenilir tedarik ortağınızız.</p>
                     <p class="font-body-md text-body-md text-secondary">Geniş ürün yelpazemizle, projelerinizden ofislerinize, endüstriyel tesislerinizden operasyonel süreçlerinize kadar her alanda yanınızdayız.</p>
                     <a href="hakkimizda.html" class="btn-secondary mt-6 inline-block">Daha Fazla Bilgi</a>
                 </div>
-                <div class="relative h-96 rounded-lg overflow-hidden ambient-shadow">
-                    <div class="absolute inset-0 bg-cover bg-center"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZbAstMlw5M24rdNMzaRkUu7GyT1C60s-5jLZOH1nasHwuMaobFq3-iRCvuOQD-vwr8R-VfbKIpluZ7yrIbZ1x2rn3t9vVnVz6oVlPoRXdZUEtsOUNBhkY6I4zmKNONbkbAUN880uec_GeOE3LOwTtagAdnGCCEBtgf15WClITWQtGwwD6ei5ZInfFyGE7z15M393hRlgksbO5gOfoqiUSRmvnpTXFEQxWAaoT3Lo6Hk7Xj4SziJKV')">
+                <div data-aos="fade-left" class="w-full" aria-hidden="true">
+                    <div class="kh-lottie mx-auto" style="aspect-ratio:5/3;max-width:560px" data-lottie-src="wwwroot/assets/animations/truck.lottie">
+                        <div class="kh-lottie__fallback"><img src="wwwroot/assets/illustrations/delivery.svg" alt="" loading="lazy" /></div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nasıl Çalışıyoruz Bölümü -->
+        <section class="bg-surface-container-lowest py-20 px-margin-mobile md:px-margin-desktop border-y border-border-gray"
+            id="nasil-calisiyoruz">
+            <div class="max-w-container-max-width mx-auto">
+                <div data-aos="fade-up" class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Nasıl Çalışıyoruz?</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="kh-process">
+                    <div class="kh-process__rail" aria-hidden="true">
+                        <div class="kh-process__line"></div>
+                        <div class="kh-process__fill"></div>
+                    <span class="kh-process__dot" style="--pos:0.0"></span>
+                    <span class="kh-process__dot" style="--pos:0.25"></span>
+                    <span class="kh-process__dot" style="--pos:0.5"></span>
+                    <span class="kh-process__dot" style="--pos:0.75"></span>
+                    <span class="kh-process__dot" style="--pos:1.0"></span>
+                        <div class="kh-process__truck"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span></div>
+                    </div>
+                    <ol class="kh-process__steps">
+                    <li class="kh-step">
+                        <div class="kh-step__icon" aria-hidden="true">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">request_quote</span>
+                        </div>
+                        <h3 class="kh-step__title font-body-lg text-body-lg font-bold text-deep-navy mb-stack-sm">Talep Analizi</h3>
+                        <p class="font-body-sm text-body-sm text-secondary">İhtiyaçlarınızı dinler; ürün, miktar ve teslim koşullarını birlikte netleştiririz.</p>
+                    </li>
+                    <li class="kh-step">
+                        <div class="kh-step__icon" aria-hidden="true">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">inventory_2</span>
+                        </div>
+                        <h3 class="kh-step__title font-body-lg text-body-lg font-bold text-deep-navy mb-stack-sm">Tedarik</h3>
+                        <p class="font-body-sm text-body-sm text-secondary">Güvenilir tedarikçi ağımızdan en uygun fiyat ve kalitede ürünü temin ederiz.</p>
+                    </li>
+                    <li class="kh-step">
+                        <div class="kh-step__icon" aria-hidden="true">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">warehouse</span>
+                        </div>
+                        <h3 class="kh-step__title font-body-lg text-body-lg font-bold text-deep-navy mb-stack-sm">Depolama</h3>
+                        <p class="font-body-sm text-body-sm text-secondary">Ürünleriniz kontrol edilir, uygun koşullarda depolanır ve sevkiyata hazırlanır.</p>
+                    </li>
+                    <li class="kh-step">
+                        <div class="kh-step__icon" aria-hidden="true">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+                        </div>
+                        <h3 class="kh-step__title font-body-lg text-body-lg font-bold text-deep-navy mb-stack-sm">Sevkiyat</h3>
+                        <p class="font-body-sm text-body-sm text-secondary">Planlanan rota ve takvimle ürünlerinizi güvenle yola çıkarırız.</p>
+                    </li>
+                    <li class="kh-step">
+                        <div class="kh-step__icon" aria-hidden="true">
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">task_alt</span>
+                        </div>
+                        <h3 class="kh-step__title font-body-lg text-body-lg font-bold text-deep-navy mb-stack-sm">Teslimat</h3>
+                        <p class="font-body-sm text-body-sm text-secondary">Siparişinizi zamanında ve eksiksiz teslim eder, süreç sonrasında da yanınızda oluruz.</p>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- İstatistik Şeridi -->
+        <section class="bg-deep-navy text-surface-container-lowest py-16 px-margin-mobile md:px-margin-desktop"
+            id="istatistikler">
+            <div class="max-w-container-max-width mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+                <div data-aos="fade-up">
+                    <div class="font-headline-xl text-headline-xl font-bold" data-count>10+</div>
+                    <div class="font-body-md text-body-md opacity-90 mt-2">Yıllık Tecrübe</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="font-headline-xl text-headline-xl font-bold" data-count>100+</div>
+                    <div class="font-body-md text-body-md opacity-90 mt-2">Mutlu Müşteri</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="font-headline-xl text-headline-xl font-bold" data-count>500+</div>
+                    <div class="font-body-md text-body-md opacity-90 mt-2">Tamamlanan Teslimat</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="font-headline-xl text-headline-xl font-bold" data-count>20+</div>
+                    <div class="font-body-md text-body-md opacity-90 mt-2">Hizmet Verilen Şehir</div>
                 </div>
             </div>
         </section>
@@ -213,12 +311,12 @@
         <section class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-t border-border-gray"
             id="basari-hikayeleri">
             <div class="max-w-container-max-width mx-auto">
-                <div class="text-center mb-16">
+                <div data-aos="fade-up" class="text-center mb-16">
                     <h2 class="font-headline-lg text-headline-lg text-deep-navy mb-stack-sm">Başarı Hikayeleri</h2>
                     <div class="w-24 h-1 bg-primary mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[250px]">
-                    <div class="md:col-span-2 corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                    <div data-aos="zoom-in" class="md:col-span-2 corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-LxDnb0L-vyq5YbybMuzk1FiIM5aXRb06TBBf4-3zuUvyCOCBuxyfCV-PiE7AZWcBXC81h4Lk4iGv9_M7yxCsBklrrKePyVyDBoJUYA23f3yDQHB08mJoXueWXPyA4WVnOmx45Lxoob4rMDIZJbQku_UmL7Kh4apwuSp7KLQpIwhjpg1MqaXOKLDted-BV7Omj-_R0xDY7RNxRYdm86X-zbCJabO8_RYHYP7SzsSzVa2g-ocVRjZC')">
                         </div>
@@ -235,7 +333,7 @@
                                 azaltan yeni nesil rotalama stratejisi.</p>
                         </div>
                     </div>
-                    <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-6OGWAMOTT8evCLYh2sOBiYI0v8xAW_xPA23Ca707xiHRiQGaMWuNAiWoHmtqEf80NsC2m7tsyGheOvvZL7RtTLA4Z6b04RvjCuQ8OqSIlUIKSZcLQspdldXcX9GtZZCK24RepwsV6DUA7s34xzoXdf_3ZIJX6flo1wk2DBOnf4NVAjb_PZRjyvz7Tb1VkiGnHjweHuTcTWQQm071RoCqyy6P0HJt9Q2UyueDQoHLg9cKqniiXIIZ')">
                         </div>
@@ -251,7 +349,7 @@
                                 toleranslı lojistik.</p>
                         </div>
                     </div>
-                    <div class="corp-card relative overflow-hidden group flex flex-col justify-end p-0">
+                    <div data-aos="zoom-in" class="md:col-span-3 corp-card relative overflow-hidden group flex flex-col justify-end p-0">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuLVMMCj_vCWKYfP-N3OBiFsXGoVxFtose3Fs4ZUGcSXsxra0rTX3YPK_eR873UEXtg-kBmh6C7mSbgyQid_fh9MvvYU_d_wEkfBzzS_JEHMQcCgUd7gJhFK3qu0Enbii8jaNnlS-D1SCyw03_dZoA1l85Qo6p0Jyk9f49hhUT8bdhxgBguXR833cl4nRKrQhfNIZSlrlDH0bOxhH7F3niotgVo2h8YMr8u1Zf3yCkW5gcJqZGx5nb')">
                         </div>
@@ -266,13 +364,6 @@
                                 hız.</p>
                         </div>
                     </div>
-                    <div
-                        class="md:col-span-2 corp-card bg-primary-container text-on-primary-container flex flex-col justify-center items-center text-center p-stack-lg">
-                        <h3 class="font-headline-md text-headline-md mb-stack-md">Tüm Başarı Hikayelerini İnceleyin</h3>
-                        <a href="basari-hikayeleri.html"
-                            class="btn-primary bg-surface-container-lowest text-primary hover:bg-surface border-none shadow-sm">Tümünü
-                            Görüntüle</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -280,7 +371,7 @@
         <!-- İletişim / CTA Bölümü -->
         <section
             class="py-24 px-margin-mobile md:px-margin-desktop bg-deep-navy text-surface-container-lowest text-center">
-            <div class="max-w-3xl mx-auto">
+            <div data-aos="fade-in" class="max-w-3xl mx-auto">
                 <h2 class="font-headline-lg text-headline-lg mb-stack-md">Operasyonlarınızı Dönüştürmeye Hazır Mısınız?
                 </h2>
                 <p class="font-body-lg text-body-lg mb-stack-lg opacity-90">Uzman ekibimizle iletişime geçin,

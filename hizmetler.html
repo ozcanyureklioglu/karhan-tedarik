@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="wwwroot/css/animations.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="wwwroot/js/animations.js"></script>
     
     <!-- Open Graph / Sosyal Medya -->
     <meta property="og:type" content="website" />
@@ -102,7 +106,7 @@
         <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-1 gap-gutter">
 
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
+                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-primary shrink-0" style="font-variation-settings: 'FILL' 0;">sensor_door</span>
                         <div>
@@ -118,9 +122,9 @@
                     </div>
                 </div>
 
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
+                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <span class="material-symbols-outlined text-5xl text-secondary shrink-0" style="font-variation-settings: 'FILL' 0;">chair</span>
+                        <span class="material-symbols-outlined kh-icon kh-icon--chair text-5xl text-secondary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">chair</span>
                         <div>
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Profesyonel Çalışma Koltukları</h2>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ofis ve çalışma alanlarında verimliliği artıran, ergonomik, şık, dayanıklı ve uzun ömürlü oturma grubu çözümleri sunuyoruz.</p>
@@ -134,9 +138,9 @@
                     </div>
                 </div>
 
-                <div class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
+                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <span class="material-symbols-outlined text-5xl text-tertiary shrink-0" style="font-variation-settings: 'FILL' 0;">water_drop</span>
+                        <span class="material-symbols-outlined kh-icon kh-icon--drop text-5xl text-tertiary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">water_drop</span>
                         <div>
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Endüstriyel Tuz Tedariği</h2>
                             <p class="font-body-md text-body-md text-secondary mb-4">Arıtma tesislerinden tekstile, kimyadan gıdaya kadar endüstrinin ihtiyaç duyduğu yüksek saflıkta, kaliteli endüstriyel tuz çeşitleri tedarik ediyoruz.</p>
@@ -156,21 +160,26 @@
         <!-- Neden Biz -->
         <section class="bg-surface py-8 px-margin-mobile md:px-margin-desktop border-y border-border-gray">
             <div class="max-w-container-max-width mx-auto py-12">
-                <div class="text-center mb-12">
+                <div data-aos="fade-up" class="text-center mb-12">
                     <h2 class="font-headline-md text-headline-md text-deep-navy mb-4">Neden Bizimle Çalışmalısınız?</h2>
                 </div>
+                <div class="mx-auto mb-12 max-w-sm" aria-hidden="true">
+                    <div class="kh-lottie" style="aspect-ratio:16/9" data-lottie-src="wwwroot/assets/animations/warehouse.lottie">
+                        <div class="kh-lottie__fallback"><span class="material-symbols-outlined text-primary" style="font-size:96px;font-variation-settings: 'FILL' 0;">warehouse</span></div>
+                    </div>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-center">
-                    <div class="corp-card hover:-translate-y-1 transition-transform duration-300">
+                    <div data-aos="fade-up" class="corp-card hover:-translate-y-1 transition-transform duration-300">
                         <span class="material-symbols-outlined text-4xl text-primary mb-3" style="font-variation-settings: 'FILL' 0;">hub</span>
                         <h3 class="font-label-bold text-label-bold text-deep-navy mb-2">Çok Yönlü Tedarik Gücü</h3>
                         <p class="font-body-sm text-body-sm text-secondary">Farklı ihtiyaçlarınızı tek bir güvenilir kaynaktan çözerek lojistik ve operasyonel süreçlerinizi hafifletiyoruz.</p>
                     </div>
-                    <div class="corp-card hover:-translate-y-1 transition-transform duration-300">
+                    <div data-aos="fade-up" data-aos-delay="100" class="corp-card hover:-translate-y-1 transition-transform duration-300">
                         <span class="material-symbols-outlined text-4xl text-primary mb-3" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
                         <h3 class="font-label-bold text-label-bold text-deep-navy mb-2">Zamanında ve Güvenilir Teslimat</h3>
                         <p class="font-body-sm text-body-sm text-secondary">Endüstriyel süreçlerin ve projelerin aksamaması için tedarik zincirini kusursuz yönetiyoruz.</p>
                     </div>
-                    <div class="corp-card hover:-translate-y-1 transition-transform duration-300">
+                    <div data-aos="fade-up" data-aos-delay="200" class="corp-card hover:-translate-y-1 transition-transform duration-300">
                         <span class="material-symbols-outlined text-4xl text-primary mb-3" style="font-variation-settings: 'FILL' 0;">price_check</span>
                         <h3 class="font-label-bold text-label-bold text-deep-navy mb-2">Rekabetçi Fiyat &amp; Yüksek Kalite</h3>
                         <p class="font-body-sm text-body-sm text-secondary">Kaliteden ödün vermeden, işletme bütçenizi koruyan en optimum çözümleri sunuyoruz.</p>
@@ -181,7 +190,7 @@
 
         <!-- CTA -->
         <section class="py-20 px-margin-mobile md:px-margin-desktop bg-deep-navy text-surface-container-lowest text-center">
-            <div class="max-w-2xl mx-auto">
+            <div data-aos="fade-in" class="max-w-2xl mx-auto">
                 <h2 class="font-headline-md text-headline-md mb-stack-md">Siz İşinize Odaklanın, Tedarik Süreçlerini Bize Bırakın</h2>
                 <p class="font-body-md text-body-md opacity-80 mb-stack-lg">İhtiyacınız olan ürünler için hemen fiyat teklifi alın, işletmenize değer katacak iş birliğimizi bugün başlatalım!</p>
                 <a href="iletisim.html" class="btn-primary bg-surface-container-lowest text-deep-navy hover:bg-surface px-8 py-4">Hemen Teklif Alın</a>

@@ -4,7 +4,6 @@ const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const navLinks = [
     { href: 'hizmetler.html', label: 'Hizmetler' },
     { href: 'referanslar.html', label: 'Referanslar' },
-    { href: 'basari-hikayeleri.html', label: 'Başarı Hikayeleri' },
     { href: 'hakkimizda.html', label: 'Hakkımızda' },
 ];
 
@@ -30,7 +29,7 @@ function renderNavbar() {
             <div class="hidden md:flex items-center gap-4">
                 <a href="iletisim.html" class="btn-primary">Teklif Al</a>
             </div>
-            <button id="mobile-menu-btn" class="md:hidden text-primary" aria-label="Menü">
+            <button id="mobile-menu-btn" class="md:hidden text-primary" aria-label="Menü" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
@@ -68,13 +67,12 @@ function renderFooter() {
                     <h4 class="font-bold text-surface-container-lowest mb-4">İletişim</h4>
                     <div class="flex flex-col gap-3">
                         <a class="text-secondary-fixed hover:text-tertiary-fixed transition-colors" href="iletisim.html">İletişim Formu</a>
-                        <a class="text-secondary-fixed hover:text-tertiary-fixed transition-colors" href="gizlilik-politikasi.html">Gizlilik Politikası</a>
-                        <a class="text-secondary-fixed hover:text-tertiary-fixed transition-colors" href="kvkk.html">KVKK</a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-outline pt-6 text-center opacity-60 text-sm">
-                © 2025 Kar-Han Tedarik. Tüm hakları saklıdır.
+                © ${new Date().getFullYear()} Kar-Han Tedarik. Tüm hakları saklıdır.
+                <div class="mt-2">Illustrations by <a class="underline hover:text-tertiary-fixed transition-colors" href="https://storyset.com" target="_blank" rel="noopener noreferrer">Storyset</a></div>
             </div>
         </div>
     </footer>`;
@@ -99,6 +97,7 @@ function initComponents() {
             } else if (!menu.contains(e.target)) {
                 menu.classList.add('hidden');
             }
+            btn.setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
         }
     });
 }

@@ -1,0 +1,27 @@
+# Kar-Han Tedarik
+
+> Kar-Han Tedarik, İzmir (Gaziemir) merkezli bir tedarik ve lojistik firmasıdır. Stratejik satın alma, tedarik zinciri yönetimi ve lojistik alanlarında kurumsal çözümler sunar. Ürün grupları: fotoselli kapı sistemleri, profesyonel çalışma koltukları ve endüstriyel tuz. Site Türkçedir.
+
+## Sayfalar
+
+- [Ana Sayfa](https://karhantedarik.com/index.html): Firmaya genel bakış, ürün ve hizmet grupları, çalışma süreci (talep analizi, tedarik, depolama, sevkiyat, teslimat) ve iletişime yönlendirme.
+- [Hizmetler](https://karhantedarik.com/hizmetler.html): Fotoselli kapı sistemleri ve malzemeleri, profesyonel çalışma koltukları ve endüstriyel tuz tedariğinin ayrıntıları.
+- [Hakkımızda](https://karhantedarik.com/hakkimizda.html): Firma tanıtımı, misyon ve vizyon, temel değerler ve neden Kar-Han Tedarik ile çalışılmalı.
+- [Referanslar](https://karhantedarik.com/referanslar.html): Hizmet verilen sektörler ve çalışılan firmalar.
+- [İletişim](https://karhantedarik.com/iletisim.html): İletişim formu, adres, telefon, e-posta ve çalışma saatleri; teklif talebi için.
+
+## Ürün ve hizmet grupları
+
+- Fotoselli kapı sistemleri: otomatik kapı mekanizmaları, yedek parça temini, anahtar teslim kurulum, bakım ve teknik destek.
+- Profesyonel çalışma koltukları: ergonomik ofis koltukları, yönetici koltuk modelleri, toplu alım fiyat avantajı.
+- Endüstriyel tuz tedariği: su arıtma tuzu, tekstil ve kimya endüstrisi tuzu, yüksek saflık, toplu sipariş ve düzenli teslimat.
+
+## İletişim
+
+- Adres: Atıfbey Mah. 67. Sok. No:33/32, Gaziemir / İzmir, Türkiye
+- Telefon: +90 532 447 21 71
+- [İletişim sayfası](https://karhantedarik.com/iletisim.html)
+
+## Teknik
+
+- [Site haritası](https://karhantedarik.com/sitemap.xml)

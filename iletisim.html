@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="wwwroot/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="wwwroot/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="wwwroot/css/animations.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="wwwroot/js/animations.js"></script>
     
     <!-- Open Graph / Sosyal Medya -->
     <meta property="og:type" content="website" />
@@ -88,7 +92,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <!-- İletişim Formu -->
                 <div>
-                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">Bize Yazın</h2>
+                    <h2 data-aos="fade-up" class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">Bize Yazın</h2>
                     <form class="space-y-6" id="contact-form" novalidate>
                         <div>
                             <label class="block font-label-bold text-label-bold text-deep-navy mb-2" for="name">Ad Soyad</label>
@@ -121,20 +125,20 @@
                 </div>
                 <!-- İletişim Bilgileri -->
                 <div>
-                    <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">İletişim Bilgileri</h2>
+                    <h2 data-aos="fade-up" class="font-headline-md text-headline-md text-deep-navy mb-stack-lg">İletişim Bilgileri</h2>
                     <div class="space-y-6">
                         <div class="corp-card ambient-shadow flex items-start gap-4">
                             <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">location_on</span>
                             <div>
                                 <div class="font-label-bold text-label-bold text-deep-navy mb-1">Adres</div>
-                                <p class="font-body-md text-body-md text-secondary">Merkez Mah. Atatürk Cad. No:1<br />İstanbul, Türkiye</p>
+                                <p class="font-body-md text-body-md text-secondary">Atıfbey Mah. 67. Sok. No:33/32<br />Gaziemir / İzmir, Türkiye</p>
                             </div>
                         </div>
                         <div class="corp-card ambient-shadow flex items-start gap-4">
                             <span class="material-symbols-outlined text-3xl text-primary mt-1" style="font-variation-settings: 'FILL' 0;">phone</span>
                             <div>
                                 <div class="font-label-bold text-label-bold text-deep-navy mb-1">Telefon</div>
-                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="tel:+902121234567">+90 (212) 123 45 67</a>
+                                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="tel:+905324472171">+90 532 447 21 71</a>
                             </div>
                         </div>
                         <div class="corp-card ambient-shadow flex items-start gap-4">

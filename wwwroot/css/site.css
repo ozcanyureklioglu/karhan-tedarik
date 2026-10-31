@@ -129,16 +129,65 @@ body {
     box-shadow: 0px 4px 20px rgba(0, 45, 86, 0.08);
 }
 
-/* Button styles based on guide */
+/* Button styles based on guide
+   Dikkat: Tailwind CDN stilini <head> sonuna ekler; yardımcı sınıflar (bg-*, px-*,
+   border-* ...) aynı özgüllükte bu varsayılanları sonradan ezer. (@apply, linked CSS'te
+   Tailwind CDN tarafından işlenmediği için düz CSS'e çevrildi.) */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 0.125rem;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
 .btn-primary {
-    @apply bg-primary text-on-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-[#002b4d] active:ring-2 active:ring-tertiary active:ring-offset-2;
+    background-color: #003e6f;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #002b4d;
 }
 
 .btn-secondary {
-    @apply bg-transparent text-primary border border-primary rounded font-label-bold px-6 py-3 transition-colors duration-200 hover:bg-surface-container-low active:ring-2 active:ring-tertiary active:ring-offset-2;
+    background-color: transparent;
+    color: #003e6f;
+    border: 1px solid #003e6f;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f3f3;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #00415c;
 }
 
 /* Card styles */
 .corp-card {
-    @apply bg-surface-container-lowest border border-border-gray rounded-lg p-stack-lg;
+    background-color: #ffffff;
+    border: 1px solid #D1D1D1;
+    border-radius: 0.25rem;
+    padding: 32px;
+}
+
+/* Tek kenarı vurgulu kartlarda (border-t-4 / border-l-4 + border-<renk>) diğer kenarlar gri kalsın */
+.corp-card.border-t-4 {
+    border-right-color: #D1D1D1;
+    border-bottom-color: #D1D1D1;
+    border-left-color: #D1D1D1;
+}
+
+.corp-card.border-l-4 {
+    border-top-color: #D1D1D1;
+    border-right-color: #D1D1D1;
+    border-bottom-color: #D1D1D1;
 }
