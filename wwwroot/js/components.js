@@ -57,7 +57,7 @@ function renderFooter() {
                         <img src="wwwroot/assets/logo.jpeg" alt="Kar-Han Tedarik Logosu" class="h-8 w-auto rounded object-cover" />
                         <div class="font-bold text-surface-container-lowest text-lg">Kar-Han Tedarik</div>
                     </div>
-                    <p class="opacity-70 text-sm leading-relaxed">Tedarik zinciri ve lojistik çözümlerinde güvenilir iş ortağınız.</p>
+                    <p class="opacity-70 text-sm leading-relaxed">Tedarik zinciri çözümlerinde güvenilir iş ortağınız.</p>
                 </div>
                 <div>
                     <h4 class="font-bold text-surface-container-lowest mb-4">Sayfalar</h4>
