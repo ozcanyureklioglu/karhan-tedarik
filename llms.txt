@@ -1,20 +1,25 @@
 # Kar-Han Tedarik
 
-> Kar-Han Tedarik, İzmir (Gaziemir) merkezli bir tedarik firmasıdır. Stratejik satın alma ve tedarik zinciri yönetimi alanlarında kurumsal çözümler sunar. Ürün grupları: fotoselli kapı sistemleri, profesyonel çalışma koltukları ve endüstriyel tuz. Site Türkçedir.
+> Kar-Han Tedarik, İzmir (Gaziemir) merkezli bir tedarik firmasıdır. Stratejik satın alma ve tedarik zinciri yönetimi alanlarında kurumsal çözümler sunar. Ürün ve hizmet grupları: fotoselli kapı sistemleri, çalışma koltukları, terzi ve dikiş malzemeleri, tuz çeşitleri, aydınlatma ve elektrik ürünleri, teknoloji ve bilişim ürünleri, cep telefonları, yurt içi ve yurt dışı nakliye. Site Türkçedir.
 
 ## Sayfalar
 
 - [Ana Sayfa](https://karhantedarik.com/index.html): Firmaya genel bakış, ürün ve hizmet grupları, çalışma süreci (talep analizi, tedarik, depolama, sevkiyat, teslimat) ve iletişime yönlendirme.
-- [Hizmetler](https://karhantedarik.com/hizmetler.html): Fotoselli kapı sistemleri ve malzemeleri, profesyonel çalışma koltukları ve endüstriyel tuz tedariğinin ayrıntıları.
+- [Hizmetler](https://karhantedarik.com/hizmetler.html): Tüm ürün ve hizmet gruplarının ayrıntıları: fotoselli kapı, çalışma koltukları, terzi ve dikiş malzemeleri, tuz, aydınlatma ve elektrik, teknoloji ve bilişim, cep telefonları, nakliye.
 - [Hakkımızda](https://karhantedarik.com/hakkimizda.html): Firma tanıtımı, misyon ve vizyon, temel değerler ve neden Kar-Han Tedarik ile çalışılmalı.
 - [Referanslar](https://karhantedarik.com/referanslar.html): Hizmet verilen sektörler ve çalışılan firmalar.
 - [İletişim](https://karhantedarik.com/iletisim.html): İletişim formu, adres, telefon, e-posta ve çalışma saatleri; teklif talebi için.
 
 ## Ürün ve hizmet grupları
 
-- Fotoselli kapı sistemleri: otomatik kapı mekanizmaları, yedek parça temini, anahtar teslim kurulum, bakım ve teknik destek.
-- Profesyonel çalışma koltukları: ergonomik ofis koltukları, yönetici koltuk modelleri, toplu alım fiyat avantajı.
-- Endüstriyel tuz tedariği: su arıtma tuzu, tekstil ve kimya endüstrisi tuzu, yüksek saflık, toplu sipariş ve düzenli teslimat.
+- Fotoselli kapı sistemleri: kapı sistemleri, ekipman ve malzeme satışı (Türkiye geneli); Ege Bölgesi'nde iş ortakları aracılığıyla montaj, demontaj, bakım ve onarım.
+- Çalışma koltukları: makam, şef, misafir ve çalışma koltuklarının üretim ve satışı; kumaş ve deri seçenekleri, yedek parça satışı.
+- Terzi ve dikiş malzemeleri: terzilik ve dikiş çalışmalarında kullanılan malzeme ve ekipmanların satışı.
+- Tuz çeşitleri: gıda tuzları, su yumuşatma tuzları ve sanayi tuzları.
+- Aydınlatma ve elektrik ürünleri: avize ve dekoratif aydınlatma, lineer ve LED ürünler, spot, panel, şerit LED, solar ve bahçe aydınlatma, kablo, anahtar-priz, sigorta/şalt malzemeleri.
+- Teknoloji ve bilişim ürünleri: bilgisayar ve tabletler, bileşenler ve çevre birimleri, ağ ve internet ekipmanları, güvenlik ve kayıt sistemleri, sunucu ve veri depolama, teknoloji aksesuarları.
+- Cep telefonları: sıfır, kutulu ve Türkiye garantili akıllı telefonlar.
+- Yurt içi ve yurt dışı nakliye: kendi araçlarımız ve iş ortaklarımız aracılığıyla taşımacılık.
 
 ## İletişim
 
