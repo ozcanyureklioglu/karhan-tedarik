@@ -80,6 +80,7 @@
 
         function fail() {
             failed = true;
+            box.classList.add('is-fallback');
             try { if (player) player.destroy(); } catch (e) { /* yoksay */ }
             var c = box.querySelector('canvas');
             if (c) c.remove();
@@ -124,7 +125,12 @@
 
     function initLottie() {
         var boxes = document.querySelectorAll('.kh-lottie[data-lottie-src]');
-        if (!boxes.length || reduceMotion || !('IntersectionObserver' in window)) return;
+        if (!boxes.length) return;
+        // Lottie oynatılamayacaksa statik görseli göster
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+            boxes.forEach(function (b) { b.classList.add('is-fallback'); });
+            return;
+        }
         boxes.forEach(setupLottie);
     }
 

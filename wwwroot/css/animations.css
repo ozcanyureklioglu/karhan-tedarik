@@ -121,7 +121,9 @@ body {
 /* --------------------------------------------------------------------------
    Aşama 4 - Lottie
    .kh-lottie kutusu sabit en-boy oranlıdır (CLS yok). Fallback içerik
-   Lottie hazır olana kadar (ya da hiç yüklenemezse) görünür kalır.
+   (svg/ikon) varsayılan olarak gizlidir; yalnızca Lottie oynatılamadığında
+   (yükleme hatası, hareket azaltma, eski tarayıcı) JS .is-fallback ekler.
+   Böylece açılışta önce svg, ardından Lottie görünmesi (çift görüntü) olmaz.
    -------------------------------------------------------------------------- */
 .kh-lottie {
     position: relative;
@@ -131,10 +133,13 @@ body {
 .kh-lottie__fallback {
     position: absolute;
     inset: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.4s ease;
+}
+
+.kh-lottie.is-fallback .kh-lottie__fallback {
+    display: flex;
 }
 
 .kh-lottie__fallback img {
@@ -154,10 +159,6 @@ body {
 
 .kh-lottie.is-ready .kh-lottie__canvas {
     opacity: 1;
-}
-
-.kh-lottie.is-ready .kh-lottie__fallback {
-    opacity: 0;
 }
 
 /* --------------------------------------------------------------------------
