@@ -10,12 +10,18 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script src="wwwroot/js/tailwind-config.js?v=20261106"></script>
-    <link rel="stylesheet" href="wwwroot/css/site.css?v=20261106" />
+    <script src="wwwroot/js/tailwind-config.js?v=20261109"></script>
+    <link rel="stylesheet" href="wwwroot/css/site.css?v=20261109" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="wwwroot/css/animations.css?v=20261106" />
+    <link rel="stylesheet" href="wwwroot/css/animations.css?v=20261109" />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script defer src="wwwroot/js/animations.js?v=20261106"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.2.8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css" />
+    <link rel="stylesheet" href="wwwroot/css/gallery.css?v=20261109" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.2.8/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+    <script defer src="wwwroot/js/gallery.js?v=20261109"></script>
+    <script defer src="wwwroot/js/animations.js?v=20261109"></script>
     
     <!-- Open Graph / Sosyal Medya -->
     <meta property="og:type" content="website" />
@@ -103,10 +109,10 @@
         <section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-1 gap-gutter">
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
+                <div id="fotoselli-kapi" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-primary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">sensor_door</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Fotoselli Kapı ve Bariyer Sistemleri</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Modern yaşam alanlarına konfor, güvenlik ve estetik kazandıran otomatik geçiş ve kontrol çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, farklı kullanım alanlarına yönelik fotoselli kapı ve bariyer sistemleri ile bu sistemlere ait ekipman ve malzemelerin satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -119,14 +125,25 @@
                             </ul>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ürün kalitesini güvenilir hizmet anlayışıyla buluşturarak, otomatik geçiş ve kontrol sistemlerinde ihtiyaçlarınıza değer katıyoruz.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ürün çeşitlerimiz, teknik özelliklerimiz ve hizmet seçeneklerimiz hakkında detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+                            <div class="mt-6 pt-6 border-t border-border-gray" data-swiper-scope>
+                                <div class="flex items-center justify-between gap-4 mb-3">
+                                    <a href="katalog.html#fotoselli-kapi" class="text-primary font-semibold text-body-sm inline-flex items-center gap-1">Katalogda tümünü gör (41 fotoğraf ve 8 video) <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+                                    <div class="kh-swiper-nav"><button type="button" class="kh-swiper-btn" data-prev aria-label="Önceki"><span class="material-symbols-outlined">arrow_back</span></button><button type="button" class="kh-swiper-btn" data-next aria-label="Sonraki"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+                                </div>
+                                <div class="swiper kh-strip">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="wwwroot/assets/media/video/fotoselli-kapi-montaj-01.mp4" class="kh-mini kh-lb" data-gallery="hz-kapi" data-type="video" data-width="420px" data-ratio="9:16" data-title="Fotoselli kapı montajı" aria-label="Videoyu oynat: Fotoselli kapı montajı"><img src="wwwroot/assets/media/video/fotoselli-kapi-montaj-01.avif" alt="Fotoselli kapı montajı" width="480" height="864" loading="lazy" decoding="async" /><span class="kh-play" aria-hidden="true"><span class="material-symbols-outlined">play_arrow</span></span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/video/doner-kapi-calisma-01.mp4" class="kh-mini kh-lb" data-gallery="hz-kapi" data-type="video" data-width="420px" data-ratio="9:16" data-title="Döner kapı çalışırken" aria-label="Videoyu oynat: Döner kapı çalışırken"><img src="wwwroot/assets/media/video/doner-kapi-calisma-01.avif" alt="Döner kapı çalışırken" width="480" height="864" loading="lazy" decoding="async" /><span class="kh-play" aria-hidden="true"><span class="material-symbols-outlined">play_arrow</span></span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-01.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 01"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-01.avif" alt="Fotoselli kapı uygulaması 01" width="480" height="640" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-02.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 02"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-02.avif" alt="Fotoselli kapı uygulaması 02" width="640" height="480" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-03.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 03"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-03.avif" alt="Fotoselli kapı uygulaması 03" width="480" height="640" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-04.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 04"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-04.avif" alt="Fotoselli kapı uygulaması 04" width="480" height="640" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-05.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 05"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-05.avif" alt="Fotoselli kapı uygulaması 05" width="480" height="640" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-06.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 06"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-06.avif" alt="Fotoselli kapı uygulaması 06" width="640" height="480" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-07.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 07"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-07.avif" alt="Fotoselli kapı uygulaması 07" width="640" height="480" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-08.avif" class="kh-mini kh-lb" data-gallery="hz-kapi" data-title="Fotoselli kapı uygulaması 08"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-08.avif" alt="Fotoselli kapı uygulaması 08" width="640" height="480" loading="lazy" decoding="async" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
+                <div id="calisma-koltuklari" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined kh-icon kh-icon--chair text-5xl text-secondary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">chair</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Çalışma Koltukları</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Çalışma alanlarına konfor, estetik ve profesyonelliği bir arada sunan koltuk çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, farklı ihtiyaçlara ve çalışma ortamlarına uygun makam, şef, misafir ve çalışma koltuklarının üretim ve satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -141,14 +158,25 @@
                             </ul>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kaliteli üretimi, konforu ve estetiği bir araya getirerek çalışma alanlarınıza değer katıyoruz.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ürün modellerimiz, kumaş ve deri seçeneklerimiz ile yedek parça çeşitlerimiz hakkında detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+                            <div class="mt-6 pt-6 border-t border-border-gray" data-swiper-scope>
+                                <div class="flex items-center justify-between gap-4 mb-3">
+                                    <a href="katalog.html#calisma-koltuklari" class="text-primary font-semibold text-body-sm inline-flex items-center gap-1">Katalogda tümünü gör (24 ürün görseli) <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+                                    <div class="kh-swiper-nav"><button type="button" class="kh-swiper-btn" data-prev aria-label="Önceki"><span class="material-symbols-outlined">arrow_back</span></button><button type="button" class="kh-swiper-btn" data-next aria-label="Sonraki"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+                                </div>
+                                <div class="swiper kh-strip">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/calisma-koltugu-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Çalışma koltuğu"><img src="wwwroot/assets/media/koltuk/calisma-koltugu-01.avif" alt="Çalışma koltuğu" width="424" height="546" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/calisma-koltugu-02.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="File sırtlı, başlıklı çalışma koltuğu"><img src="wwwroot/assets/media/koltuk/calisma-koltugu-02.avif" alt="File sırtlı, başlıklı çalışma koltuğu" width="369" height="535" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/makam-koltugu-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Kapitoneli deri makam koltuğu"><img src="wwwroot/assets/media/koltuk/makam-koltugu-01.avif" alt="Kapitoneli deri makam koltuğu" width="353" height="471" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/sef-koltugu-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Deri şef koltuğu"><img src="wwwroot/assets/media/koltuk/sef-koltugu-01.avif" alt="Deri şef koltuğu" width="503" height="726" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/sef-koltugu-02.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Deri şef koltuğu"><img src="wwwroot/assets/media/koltuk/sef-koltugu-02.avif" alt="Deri şef koltuğu" width="470" height="544" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/oyuncu-koltugu-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Oyuncu koltuğu"><img src="wwwroot/assets/media/koltuk/oyuncu-koltugu-01.avif" alt="Oyuncu koltuğu" width="366" height="545" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/misafir-koltugu-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Krom ayaklı misafir koltuğu"><img src="wwwroot/assets/media/koltuk/misafir-koltugu-01.avif" alt="Krom ayaklı misafir koltuğu" width="267" height="316" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/misafir-koltugu-02.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Kumaş misafir sandalyesi"><img src="wwwroot/assets/media/koltuk/misafir-koltugu-02.avif" alt="Kumaş misafir sandalyesi" width="333" height="340" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/misafir-koltugu-03.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Krom ayaklı misafir koltukları"><img src="wwwroot/assets/media/koltuk/onizleme/misafir-koltugu-03.avif" alt="Krom ayaklı misafir koltukları" width="640" height="640" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/koltuk/calisma-koltugu-03.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-koltuk" data-title="Çalışma koltuğu"><img src="wwwroot/assets/media/koltuk/calisma-koltugu-03.avif" alt="Çalışma koltuğu" width="335" height="414" loading="lazy" decoding="async" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
+                <div id="terzi-dikis" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-tertiary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">content_cut</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Terzi ve Dikiş Malzemeleri</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Profesyonel terzilikten günlük dikiş ihtiyaçlarına kadar geniş kullanım alanlarına yönelik malzeme çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, terzilik ve dikiş çalışmalarında kullanılan çeşitli malzeme ve ekipmanların satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -159,10 +187,10 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
+                <div id="tuz" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined kh-icon kh-icon--drop text-5xl text-primary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">water_drop</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Tuz Çeşitleri</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Gıda sektöründen endüstriyel uygulamalara kadar farklı ihtiyaçlara yönelik güvenilir tuz tedarik çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, gıda üretimi, su yumuşatma sistemleri ve çeşitli sanayi uygulamalarında kullanılan tuz ürünlerinin satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -178,21 +206,32 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
+                <div id="aydinlatma-elektrik" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-secondary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">lightbulb</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Aydınlatma ve Elektrik Ürünleri</h2>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik’te ev, iş yeri ve farklı kullanım alanları için aydınlatma ve elektrik ürünleri bulunur. Ürün gruplarımız arasında avize ve dekoratif aydınlatmalar; lineer ve LED ürünler, spotlar, paneller ve şerit LED’ler; solar ve bahçe aydınlatmaları yer alır. Kablo, anahtar-priz ve sigorta/şalt malzemeleri de ürün yelpazemizin içindedir.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ürün grupları hakkında bilgi almak için iletişim sayfamızdan bize ulaşabilirsiniz.</p>
+                            <div class="mt-6 pt-6 border-t border-border-gray" data-swiper-scope>
+                                <div class="flex items-center justify-between gap-4 mb-3">
+                                    <a href="katalog.html#aydinlatma-elektrik" class="text-primary font-semibold text-body-sm inline-flex items-center gap-1">Katalogda tümünü gör (13 ürün görseli) <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+                                    <div class="kh-swiper-nav"><button type="button" class="kh-swiper-btn" data-prev aria-label="Önceki"><span class="material-symbols-outlined">arrow_back</span></button><button type="button" class="kh-swiper-btn" data-next aria-label="Sonraki"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+                                </div>
+                                <div class="swiper kh-strip">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/led-ampul-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="LED ampul"><img src="wwwroot/assets/media/aydinlatma/led-ampul-01.avif" alt="LED ampul" width="145" height="197" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/masa-lambasi-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Şarjlı masa lambası"><img src="wwwroot/assets/media/aydinlatma/masa-lambasi-01.avif" alt="Şarjlı masa lambası" width="147" height="222" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/bahce-aydinlatmasi-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Bahçe aydınlatma armatürleri"><img src="wwwroot/assets/media/aydinlatma/bahce-aydinlatmasi-01.avif" alt="Bahçe aydınlatma armatürleri" width="597" height="295" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/elektrikli-somine-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Elektrikli şömine ısıtıcı"><img src="wwwroot/assets/media/aydinlatma/elektrikli-somine-01.avif" alt="Elektrikli şömine ısıtıcı" width="340" height="340" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/kablo-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Kablo makarası"><img src="wwwroot/assets/media/aydinlatma/kablo-01.avif" alt="Kablo makarası" width="776" height="295" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/led-panel-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Sıva altı LED panel"><img src="wwwroot/assets/media/aydinlatma/led-panel-01.avif" alt="Sıva altı LED panel" width="646" height="420" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/led-ampul-02.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Yüksek güçlü LED ampul"><img src="wwwroot/assets/media/aydinlatma/led-ampul-02.avif" alt="Yüksek güçlü LED ampul" width="267" height="345" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/filament-ampul-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Filament ampul"><img src="wwwroot/assets/media/aydinlatma/filament-ampul-01.avif" alt="Filament ampul" width="776" height="333" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/rattan-avize-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Rattan avize"><img src="wwwroot/assets/media/aydinlatma/rattan-avize-01.avif" alt="Rattan avize" width="282" height="206" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/aydinlatma/tavan-vantilatoru-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-aydinlatma" data-title="Aydınlatmalı tavan vantilatörü"><img src="wwwroot/assets/media/aydinlatma/tavan-vantilatoru-01.avif" alt="Aydınlatmalı tavan vantilatörü" width="396" height="225" loading="lazy" decoding="async" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
+                <div id="teknoloji-bilisim" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-tertiary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-tertiary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">devices</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Teknoloji ve Bilişim Ürünleri</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Bireysel kullanımdan kurumsal ihtiyaçlara kadar teknolojiyi hayatın her alanına taşıyan ürün çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, bilgisayar ve bilişim teknolojileri alanında farklı kullanım ihtiyaçlarına yönelik ürünlerin satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -208,14 +247,25 @@
                             </ul>
                             <p class="font-body-md text-body-md text-secondary mb-4">Güncel teknolojileri, geniş ürün seçenekleri ve güvenilir tedarik anlayışıyla buluşturarak ihtiyaçlarınıza çözüm sunuyoruz.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Ürün modellerimiz, teknik özellikleri ve tedarik seçenekleri hakkında detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+                            <div class="mt-6 pt-6 border-t border-border-gray" data-swiper-scope>
+                                <div class="flex items-center justify-between gap-4 mb-3">
+                                    <a href="katalog.html#teknoloji-bilisim" class="text-primary font-semibold text-body-sm inline-flex items-center gap-1">Katalogda tümünü gör (9 ürün görseli) <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span></a>
+                                    <div class="kh-swiper-nav"><button type="button" class="kh-swiper-btn" data-prev aria-label="Önceki"><span class="material-symbols-outlined">arrow_back</span></button><button type="button" class="kh-swiper-btn" data-next aria-label="Sonraki"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+                                </div>
+                                <div class="swiper kh-strip">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/hepsi-bir-arada-bilgisayar-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Hepsi bir arada bilgisayar"><img src="wwwroot/assets/media/bilgisayar/hepsi-bir-arada-bilgisayar-01.avif" alt="Hepsi bir arada bilgisayar" width="568" height="555" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/masaustu-bilgisayar-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Masaüstü bilgisayar"><img src="wwwroot/assets/media/bilgisayar/masaustu-bilgisayar-01.avif" alt="Masaüstü bilgisayar" width="542" height="637" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/mini-bilgisayar-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Mini masaüstü bilgisayar"><img src="wwwroot/assets/media/bilgisayar/mini-bilgisayar-01.avif" alt="Mini masaüstü bilgisayar" width="412" height="647" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/dizustu-bilgisayar-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Dizüstü bilgisayar"><img src="wwwroot/assets/media/bilgisayar/dizustu-bilgisayar-01.avif" alt="Dizüstü bilgisayar" width="592" height="467" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/tablet-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Tablet"><img src="wwwroot/assets/media/bilgisayar/tablet-01.avif" alt="Tablet" width="453" height="360" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/kablosuz-mouse-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Kablosuz mouse"><img src="wwwroot/assets/media/bilgisayar/kablosuz-mouse-01.avif" alt="Kablosuz mouse" width="557" height="542" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/klavye-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Klavye"><img src="wwwroot/assets/media/bilgisayar/klavye-01.avif" alt="Klavye" width="621" height="317" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/kulaklik-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Mikrofonlu kulaklık"><img src="wwwroot/assets/media/bilgisayar/kulaklik-01.avif" alt="Mikrofonlu kulaklık" width="562" height="616" loading="lazy" decoding="async" /></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/bilgisayar/direksiyon-seti-01.avif" class="kh-mini kh-lb kh-mini--product" data-gallery="hz-bilgisayar" data-title="Direksiyon ve pedal seti"><img src="wwwroot/assets/media/bilgisayar/direksiyon-seti-01.avif" alt="Direksiyon ve pedal seti" width="572" height="541" loading="lazy" decoding="async" /></a></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
+                <div id="cep-telefonlari" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-primary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-primary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">smartphone</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Cep Telefonları</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Güncel mobil teknolojiler, farklı ihtiyaçlara yönelik telefon modelleri ve güvenilir tedarik çözümleri.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, farklı kullanım ihtiyaçlarına ve tercihlere hitap eden sıfır, kutulu ve Türkiye garantili cep telefonlarının satışını Türkiye genelinde gerçekleştiriyoruz.</p>
@@ -226,10 +276,10 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
+                <div id="nakliye" style="scroll-margin-top:24px" data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-l-4 border-secondary">
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <span class="material-symbols-outlined text-5xl text-secondary shrink-0" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
-                        <div>
+                        <div class="w-full min-w-0 flex-1">
                             <h2 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Yurt İçi ve Yurt Dışı Nakliye</h2>
                             <p class="font-body-md text-body-md text-primary font-semibold mb-4">Güvenilir taşımacılık, güçlü iş birlikleri ve farklı lojistik ihtiyaçlarına yönelik profesyonel çözümler.</p>
                             <p class="font-body-md text-body-md text-secondary mb-4">Kar-Han Tedarik olarak, yurt içi ve yurt dışı nakliye ihtiyaçlarına yönelik taşımacılık hizmetleri sunuyoruz.</p>
@@ -286,7 +336,7 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="wwwroot/js/components.js?v=20261106"></script>
+    <script src="wwwroot/js/components.js?v=20261109"></script>
 </body>
 </html>
 

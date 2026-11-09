@@ -3,6 +3,7 @@ const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 const navLinks = [
     { href: 'hizmetler.html', label: 'Hizmetler' },
+    { href: 'katalog.html', label: 'Katalog' },
     { href: 'hakkimizda.html', label: 'Hakkımızda' },
 ];
 

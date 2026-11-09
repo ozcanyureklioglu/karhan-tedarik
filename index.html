@@ -14,15 +14,21 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <script src="wwwroot/js/tailwind-config.js?v=20261106"></script>
-    <link rel="stylesheet" href="wwwroot/css/site.css?v=20261106" />
+    <script src="wwwroot/js/tailwind-config.js?v=20261109"></script>
+    <link rel="stylesheet" href="wwwroot/css/site.css?v=20261109" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="wwwroot/css/animations.css?v=20261106" />
+    <link rel="stylesheet" href="wwwroot/css/animations.css?v=20261109" />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
-    <script defer src="wwwroot/js/animations.js?v=20261106"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.2.8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css" />
+    <link rel="stylesheet" href="wwwroot/css/gallery.css?v=20261109" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.2.8/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+    <script defer src="wwwroot/js/gallery.js?v=20261109"></script>
+    <script defer src="wwwroot/js/animations.js?v=20261109"></script>
     
     <!-- Open Graph / Sosyal Medya -->
     <meta property="og:type" content="website" />
@@ -157,46 +163,81 @@
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
+                <div data-aos="fade-up" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">sensor_door</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Fotoselli Kapı ve Bariyer Sistemleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Modern yaşam alanlarına konfor, güvenlik ve estetik kazandıran otomatik geçiş ve kontrol çözümleri.</p>
+                    <a href="katalog.html#fotoselli-kapi" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Fotoselli Kapı ve Bariyer Sistemleri</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
+                <div data-aos="fade-up" data-aos-delay="100" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
                     <span class="material-symbols-outlined kh-icon kh-icon--chair text-4xl text-secondary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">chair</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Çalışma Koltukları</h3>
                     <p class="font-body-md text-body-md text-secondary">Çalışma alanlarına konfor, estetik ve profesyonelliği bir arada sunan koltuk çözümleri.</p>
+                    <a href="katalog.html#calisma-koltuklari" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Çalışma Koltukları</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
+                <div data-aos="fade-up" data-aos-delay="200" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
                     <span class="material-symbols-outlined text-4xl text-tertiary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">content_cut</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Terzi ve Dikiş Malzemeleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Profesyonel terzilikten günlük dikiş ihtiyaçlarına kadar geniş kullanım alanlarına yönelik malzeme çözümleri.</p>
+                    <a href="katalog.html#terzi-dikis" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Terzi ve Dikiş Malzemeleri</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
+                <div data-aos="fade-up" data-aos-delay="300" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
                     <span class="material-symbols-outlined kh-icon kh-icon--drop text-4xl text-primary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">water_drop</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Tuz Çeşitleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Gıda sektöründen endüstriyel uygulamalara kadar farklı ihtiyaçlara yönelik güvenilir tuz tedarik çözümleri.</p>
+                    <a href="katalog.html#tuz" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Tuz Çeşitleri</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
+                <div data-aos="fade-up" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
                     <span class="material-symbols-outlined text-4xl text-secondary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">lightbulb</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Aydınlatma ve Elektrik Ürünleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Ev, iş yeri ve farklı kullanım alanları için aydınlatma ve elektrik ürünleri.</p>
+                    <a href="katalog.html#aydinlatma-elektrik" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Aydınlatma ve Elektrik Ürünleri</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
+                <div data-aos="fade-up" data-aos-delay="100" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-tertiary">
                     <span class="material-symbols-outlined text-4xl text-tertiary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">devices</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Teknoloji ve Bilişim Ürünleri</h3>
                     <p class="font-body-md text-body-md text-secondary">Bireysel kullanımdan kurumsal ihtiyaçlara kadar teknolojiyi hayatın her alanına taşıyan ürün çözümleri.</p>
+                    <a href="katalog.html#teknoloji-bilisim" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Teknoloji ve Bilişim Ürünleri</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
+                <div data-aos="fade-up" data-aos-delay="200" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-primary">
                     <span class="material-symbols-outlined text-4xl text-primary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">smartphone</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Cep Telefonları</h3>
                     <p class="font-body-md text-body-md text-secondary">Güncel mobil teknolojiler, farklı ihtiyaçlara yönelik telefon modelleri ve güvenilir tedarik çözümleri.</p>
+                    <a href="katalog.html#cep-telefonlari" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Cep Telefonları</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300" class="corp-card ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
+                <div data-aos="fade-up" data-aos-delay="300" class="corp-card relative flex flex-col ambient-shadow hover:-translate-y-1 transition-transform duration-300 border-t-4 border-secondary">
                     <span class="material-symbols-outlined text-4xl text-secondary mb-stack-md" aria-hidden="true" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
                     <h3 class="font-headline-md text-headline-md text-deep-navy mb-stack-sm">Yurt İçi ve Yurt Dışı Nakliye</h3>
                     <p class="font-body-md text-body-md text-secondary">Güvenilir taşımacılık, güçlü iş birlikleri ve farklı lojistik ihtiyaçlarına yönelik profesyonel çözümler.</p>
+                    <a href="katalog.html#nakliye" class="kh-card-link">Kataloğu İncele<span class="sr-only">: Yurt İçi ve Yurt Dışı Nakliye</span><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
                 </div>
+            </div>
+            <div data-aos="fade-up" class="text-center mt-12">
+                <a href="katalog.html" class="btn-primary text-body-md font-body-md px-8 py-4">Tüm Kataloğu İncele</a>
+            </div>
+        </section>
+
+
+        <!-- Sahadan Kareler (vitrin) -->
+        <section class="relative overflow-hidden bg-deep-navy text-surface-container-lowest py-16 md:py-20" id="sahadan" data-swiper-scope>
+            <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div data-aos="fade-up" class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+                    <div class="max-w-2xl">
+                        <span class="inline-block font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container mb-2">Sahadan Kareler</span>
+                        <h2 class="font-headline-lg text-headline-lg mb-stack-sm">Fotoselli Kapı Uygulamalarımız</h2>
+                        <p class="font-body-md text-body-md opacity-80">Ege Bölgesi'nde iş ortaklarımızla tamamladığımız montaj ve uygulamalardan fotoğraf ve videolar.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="kh-swiper-nav"><button type="button" class="kh-swiper-btn kh-swiper-btn--light" data-prev aria-label="Önceki"><span class="material-symbols-outlined">arrow_back</span></button><button type="button" class="kh-swiper-btn kh-swiper-btn--light" data-next aria-label="Sonraki"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+                        <a href="katalog.html#fotoselli-kapi" class="btn-secondary text-surface-container-lowest border-surface-container-lowest hover:bg-surface-tint hover:border-surface-tint">Tüm Galeri</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper kh-showcase" aria-label="Uygulama fotoğrafları ve videoları">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-05.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 05"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-05.avif" alt="Fotoselli kapı uygulaması 05" width="480" height="640" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 05</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-15.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 15"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-15.avif" alt="Fotoselli kapı uygulaması 15" width="640" height="480" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 15</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/video/fotoselli-kapi-montaj-01.mp4" class="kh-shot kh-lb" data-gallery="vitrin" data-type="video" data-width="420px" data-ratio="9:16" data-title="Fotoselli kapı montajı" aria-label="Videoyu oynat: Fotoselli kapı montajı"><img src="wwwroot/assets/media/video/fotoselli-kapi-montaj-01.avif" alt="Fotoselli kapı montajı" width="480" height="864" loading="lazy" decoding="async" /><span class="kh-badge"><span class="material-symbols-outlined">videocam</span>0:35</span><span class="kh-play" aria-hidden="true"><span class="material-symbols-outlined">play_arrow</span></span><span class="kh-reel__cap">Fotoselli kapı montajı</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-08.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 08"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-08.avif" alt="Fotoselli kapı uygulaması 08" width="640" height="480" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 08</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-24.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 24"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-24.avif" alt="Fotoselli kapı uygulaması 24" width="640" height="480" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 24</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-13.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 13"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-13.avif" alt="Fotoselli kapı uygulaması 13" width="640" height="480" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 13</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/video/doner-kapi-calisma-01.mp4" class="kh-shot kh-lb" data-gallery="vitrin" data-type="video" data-width="420px" data-ratio="9:16" data-title="Döner kapı çalışırken" aria-label="Videoyu oynat: Döner kapı çalışırken"><img src="wwwroot/assets/media/video/doner-kapi-calisma-01.avif" alt="Döner kapı çalışırken" width="480" height="864" loading="lazy" decoding="async" /><span class="kh-badge"><span class="material-symbols-outlined">videocam</span>0:22</span><span class="kh-play" aria-hidden="true"><span class="material-symbols-outlined">play_arrow</span></span><span class="kh-reel__cap">Döner kapı çalışırken</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-30.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 30"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-30.avif" alt="Fotoselli kapı uygulaması 30" width="480" height="640" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 30</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-18.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 18"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-18.avif" alt="Fotoselli kapı uygulaması 18" width="480" height="640" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 18</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-11.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 11"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-11.avif" alt="Fotoselli kapı uygulaması 11" width="480" height="640" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 11</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/video/fotoselli-kapi-calisma-05.mp4" class="kh-shot kh-lb" data-gallery="vitrin" data-type="video" data-width="420px" data-ratio="9:16" data-title="Fotoselli kapı çalışırken" aria-label="Videoyu oynat: Fotoselli kapı çalışırken"><img src="wwwroot/assets/media/video/fotoselli-kapi-calisma-05.avif" alt="Fotoselli kapı çalışırken" width="480" height="864" loading="lazy" decoding="async" /><span class="kh-badge"><span class="material-symbols-outlined">videocam</span>0:26</span><span class="kh-play" aria-hidden="true"><span class="material-symbols-outlined">play_arrow</span></span><span class="kh-reel__cap">Fotoselli kapı çalışırken</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-27.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 27"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-27.avif" alt="Fotoselli kapı uygulaması 27" width="640" height="480" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 27</span></a></div><div class="swiper-slide"><a href="wwwroot/assets/media/kapi/fotoselli-kapi-uygulama-21.avif" class="kh-shot kh-lb" data-gallery="vitrin" data-title="Fotoselli kapı uygulaması 21"><img src="wwwroot/assets/media/kapi/onizleme/fotoselli-kapi-uygulama-21.avif" alt="Fotoselli kapı uygulaması 21" width="480" height="640" loading="lazy" decoding="async" /><span class="kh-reel__cap">Fotoselli kapı uygulaması 21</span></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -413,8 +454,8 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="wwwroot/js/tailwind-config.js?v=20261106"></script>
-    <script src="wwwroot/js/components.js?v=20261106"></script>
+    <script src="wwwroot/js/tailwind-config.js?v=20261109"></script>
+    <script src="wwwroot/js/components.js?v=20261109"></script>
 </body>
 
 </html>

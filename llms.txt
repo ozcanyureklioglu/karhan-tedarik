@@ -6,6 +6,7 @@
 
 - [Ana Sayfa](https://karhantedarik.com/index.html): Firmaya genel bakış, ürün ve hizmet grupları, çalışma süreci (talep analizi, tedarik, depolama, sevkiyat, teslimat) ve iletişime yönlendirme.
 - [Hizmetler](https://karhantedarik.com/hizmetler.html): Tüm ürün ve hizmet gruplarının ayrıntıları: fotoselli kapı ve bariyer sistemleri, çalışma koltukları, terzi ve dikiş malzemeleri, tuz, aydınlatma ve elektrik, teknoloji ve bilişim, cep telefonları, nakliye.
+- [Katalog](https://karhantedarik.com/katalog.html): Fotoselli kapı uygulama fotoğrafları ve montaj videoları; çalışma koltukları, aydınlatma/elektrik ve teknoloji ürün galerileri.
 - [Hakkımızda](https://karhantedarik.com/hakkimizda.html): Firma tanıtımı, misyon ve vizyon, temel değerler ve neden Kar-Han Tedarik ile çalışılmalı.
 - [İletişim](https://karhantedarik.com/iletisim.html): İletişim formu, adres, telefon, e-posta ve çalışma saatleri; teklif talebi için.
 

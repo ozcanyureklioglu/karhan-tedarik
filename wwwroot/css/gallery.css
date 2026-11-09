@@ -1,0 +1,748 @@
+/* ==========================================================================
+   Kar-Han Tedarik - Galeri / Katalog katmanı
+   Swiper (vitrin, video şeridi, mini şerit) + GLightbox (tam ekran görüntüleme)
+   Renkler animations.css :root değişkenlerinden gelir.
+   ========================================================================== */
+
+:root {
+    --swiper-theme-color: var(--kh-primary, #003e6f);
+    --swiper-navigation-size: 18px;
+    --kh-tile-radius: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Kategori menüsü (katalog) - navbar'ın altında yapışkan
+   -------------------------------------------------------------------------- */
+.kh-catnav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.92);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--kh-border-gray);
+}
+
+.kh-catnav__list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.kh-catnav__list::-webkit-scrollbar {
+    display: none;
+}
+
+.kh-catnav__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--kh-border-gray);
+    background: #fff;
+    color: var(--kh-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.kh-catnav__link .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.kh-catnav__link:hover {
+    border-color: var(--kh-primary);
+    color: var(--kh-primary);
+}
+
+.kh-catnav__link.is-active {
+    background: var(--kh-primary);
+    border-color: var(--kh-primary);
+    color: #fff;
+}
+
+.kh-cat-section {
+    scroll-margin-top: 72px;
+}
+
+/* --------------------------------------------------------------------------
+   Kategori başlığı
+   -------------------------------------------------------------------------- */
+.kh-cat-head__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--kh-primary);
+    color: #fff;
+    flex: none;
+}
+
+.kh-cat-head__icon .material-symbols-outlined {
+    font-size: 30px;
+}
+
+.kh-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #e8eef5;
+    color: var(--kh-primary);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.kh-note {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--kh-secondary);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.kh-note .material-symbols-outlined {
+    font-size: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Filtre çipleri
+   -------------------------------------------------------------------------- */
+.kh-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.kh-chip {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--kh-border-gray);
+    background: #fff;
+    color: var(--kh-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.kh-chip:hover {
+    border-color: var(--kh-primary);
+    color: var(--kh-primary);
+}
+
+.kh-chip[aria-pressed="true"] {
+    background: var(--kh-deep-navy);
+    border-color: var(--kh-deep-navy);
+    color: #fff;
+}
+
+.kh-chip:focus-visible,
+.kh-lb:focus-visible,
+.kh-catnav__link:focus-visible {
+    outline: 2px solid var(--kh-tertiary);
+    outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Masonry fotoğraf ızgarası (uygulama fotoğrafları)
+   -------------------------------------------------------------------------- */
+.kh-masonry {
+    columns: 2;
+    column-gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .kh-masonry {
+        columns: 3;
+        column-gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .kh-masonry {
+        columns: 4;
+    }
+}
+
+.kh-tile {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    break-inside: avoid;
+    border-radius: var(--kh-tile-radius);
+    overflow: hidden;
+    background: #e8e8e8;
+    isolation: isolate;
+    animation: kh-tile-in 0.45s ease both;
+}
+
+@media (min-width: 768px) {
+    .kh-tile {
+        margin-bottom: 16px;
+    }
+}
+
+.kh-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.kh-tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 45, 86, 0.75) 0%, rgba(0, 45, 86, 0) 55%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+
+.kh-tile__cap {
+    position: absolute;
+    left: 12px;
+    right: 48px;
+    bottom: 10px;
+    z-index: 1;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.kh-tile__zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--kh-primary);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.kh-tile__zoom .material-symbols-outlined {
+    font-size: 20px;
+}
+
+@media (hover: hover) {
+    .kh-tile:hover img {
+        transform: scale(1.06);
+    }
+
+    .kh-tile:hover::after,
+    .kh-tile:hover .kh-tile__cap,
+    .kh-tile:hover .kh-tile__zoom {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Dokunmatik cihazda büyüteç ikonu hep görünsün */
+@media (hover: none) {
+    .kh-tile__zoom {
+        opacity: 1;
+        transform: none;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.kh-tile.is-hidden,
+.kh-product.is-hidden {
+    display: none;
+}
+
+@keyframes kh-tile-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Ürün kartları (beyaz zeminli ürün görselleri)
+   -------------------------------------------------------------------------- */
+.kh-products {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .kh-products {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .kh-products {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.kh-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--kh-border-gray);
+    border-radius: var(--kh-tile-radius);
+    background: #fff;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    animation: kh-tile-in 0.45s ease both;
+}
+
+.kh-product__media {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at 50% 40%, #ffffff 0%, #f3f5f8 100%);
+    overflow: hidden;
+}
+
+.kh-product__media img {
+    position: absolute;
+    inset: 10%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.kh-product__body {
+    padding: 10px 12px 12px;
+    border-top: 1px solid #eef0f3;
+}
+
+.kh-product__title {
+    color: var(--kh-deep-navy);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.kh-product__tag {
+    display: inline-block;
+    margin-top: 4px;
+    color: var(--kh-secondary);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.kh-product .kh-tile__zoom {
+    top: 10px;
+    right: 10px;
+    bottom: auto;
+}
+
+@media (hover: hover) {
+    .kh-product:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 45, 86, 0.14);
+        border-color: #c9d6e3;
+    }
+
+    .kh-product:hover .kh-product__media img {
+        transform: scale(1.08);
+    }
+
+    .kh-product:hover .kh-tile__zoom {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Swiper ortak
+   -------------------------------------------------------------------------- */
+.kh-swiper-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.kh-swiper-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--kh-border-gray);
+    background: #fff;
+    color: var(--kh-primary);
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}
+
+.kh-swiper-btn:hover {
+    background: var(--kh-primary);
+    border-color: var(--kh-primary);
+    color: #fff;
+}
+
+.kh-swiper-btn.swiper-button-disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.kh-swiper-btn--light {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #fff;
+}
+
+.kh-swiper-btn--light:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--kh-deep-navy);
+}
+
+/* Swiper yüklenemezse: yatay kaydırılabilir şerit olarak çalışsın */
+.swiper:not(.swiper-initialized) {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+
+.swiper:not(.swiper-initialized) > .swiper-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.swiper:not(.swiper-initialized) .swiper-slide {
+    flex: none;
+    scroll-snap-align: start;
+}
+
+/* Oynat butonu (video kapakları) */
+.kh-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin: -29px 0 0 -29px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--kh-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.kh-play .material-symbols-outlined {
+    font-size: 34px;
+    font-variation-settings: 'FILL' 1;
+}
+
+.kh-play::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    animation: kh-play-ring 2s ease-out infinite;
+}
+
+@keyframes kh-play-ring {
+    0%   { transform: scale(0.85); opacity: 0.9; }
+    100% { transform: scale(1.35); opacity: 0; }
+}
+
+.kh-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(0, 20, 40, 0.65);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.kh-badge .material-symbols-outlined {
+    font-size: 14px;
+    font-variation-settings: 'FILL' 1;
+}
+
+/* --------------------------------------------------------------------------
+   Dikey video şeridi ("reels")
+   -------------------------------------------------------------------------- */
+.kh-reels .swiper-slide {
+    width: 200px;
+}
+
+@media (min-width: 768px) {
+    .kh-reels .swiper-slide {
+        width: 230px;
+    }
+}
+
+.kh-reel {
+    position: relative;
+    display: block;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #0b2238;
+    box-shadow: 0 10px 24px rgba(0, 45, 86, 0.18);
+}
+
+.kh-reel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.kh-reel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 20, 40, 0.85) 0%, rgba(0, 20, 40, 0) 50%);
+    pointer-events: none;
+}
+
+.kh-reel__cap {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+@media (hover: hover) {
+    .kh-reel:hover img {
+        transform: scale(1.06);
+    }
+
+    .kh-reel:hover .kh-play {
+        transform: scale(1.1);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Ana sayfa vitrin (coverflow)
+   -------------------------------------------------------------------------- */
+.kh-showcase {
+    padding: 8px 0 44px;
+}
+
+.kh-showcase .swiper-slide {
+    width: 260px;
+    transition: opacity 0.4s ease;
+}
+
+@media (min-width: 768px) {
+    .kh-showcase .swiper-slide {
+        width: 300px;
+    }
+}
+
+.kh-showcase.swiper-initialized .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.55;
+}
+
+.kh-shot {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #0b2238;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.kh-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kh-shot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 20, 40, 0.8) 0%, rgba(0, 20, 40, 0) 45%);
+    pointer-events: none;
+}
+
+.kh-shot .kh-reel__cap {
+    font-size: 13px;
+}
+
+.kh-showcase .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.kh-showcase .swiper-pagination-bullet-active {
+    background: #fff;
+    width: 22px;
+    border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Hizmetler sayfası mini şerit
+   -------------------------------------------------------------------------- */
+.kh-strip .swiper-slide {
+    width: 132px;
+}
+
+@media (min-width: 768px) {
+    .kh-strip .swiper-slide {
+        width: 150px;
+    }
+}
+
+.kh-mini {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--kh-border-gray);
+    background: #f3f5f8;
+}
+
+.kh-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.kh-mini--product img {
+    object-fit: contain;
+    padding: 10%;
+    mix-blend-mode: multiply;
+    background: #fff;
+}
+
+.kh-mini .kh-play {
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+}
+
+.kh-mini .kh-play .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.kh-mini .kh-play::before {
+    display: none;
+}
+
+@media (hover: hover) {
+    .kh-mini:hover img {
+        transform: scale(1.08);
+    }
+}
+
+/* Ana sayfa ürün kartı bağlantısı: kartın tamamı tıklanabilir */
+.kh-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: auto;
+    padding-top: 16px;
+    color: var(--kh-primary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.kh-card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.kh-card-link .material-symbols-outlined {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+    .corp-card:hover .kh-card-link .material-symbols-outlined {
+        transform: translateX(4px);
+    }
+}
+
+/* GLightbox: başlık alanını kurumsal yazı tipine uydur */
+.glightbox-container .gslide-title {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.glightbox-container .gslide-desc {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Hareket azaltma
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    .kh-tile,
+    .kh-product {
+        animation: none !important;
+    }
+
+    .kh-play::before {
+        display: none;
+    }
+
+    .kh-tile img,
+    .kh-product__media img,
+    .kh-reel img,
+    .kh-mini img {
+        transform: none !important;
+    }
+
+    .kh-showcase.swiper-initialized .swiper-slide:not(.swiper-slide-active) {
+        opacity: 1;
+    }
+}
